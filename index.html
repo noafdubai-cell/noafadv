@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VEHICLE MEDIA: A Guide to Brand Visibility | NOAF Advertising LLC</title>
+<meta name="description" content="Your Brand. In Motion. Official vehicle wrap application guide and technical manual by NOAF Advertising LLC – Digital Wide Format Products. Covers Polymeric and Cast vinyl series with standardized shop operations.">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* Official NOAF brand palette */
+    --brand:#20AF4C;
+    --brand-dk:#127A33;
+    --brand-darker:#0A4C1E;
+    --brand-soft:#E8F7ED;
+    --brand-glow:rgba(32,175,76,0.18);
+    --red:var(--brand);
+    --red-dk:var(--brand-dk);
+    --ink:#0D1711;
+    --ink-2:#1F2922;
+    --gray:#58645C;
+    --cream:#F4F8F5;
+    --line:#DFE8E2;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; scroll-padding-top:90px}
+  body{
+    font-family:'Plus Jakarta Sans','Archivo',system-ui,-apple-system,sans-serif;
+    background:#FAFCFA;
+    color:var(--ink-2);
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4,.cond{font-family:'Barlow Condensed','Archivo',sans-serif;letter-spacing:.01em}
+
+  /* Racing / wrap shop hazard stripes */
+  .hazard{background-image:repeating-linear-gradient(45deg,var(--brand) 0 12px,#0B140E 12px 24px)}
+  .hazard-light{background-image:repeating-linear-gradient(45deg,var(--brand) 0 12px,#ffffff 12px 24px)}
+  .checker{
+    height:10px;
+    background-image:
+      linear-gradient(45deg,#0B140E 25%,transparent 25%,transparent 75%,#0B140E 75%),
+      linear-gradient(45deg,#0B140E 25%,transparent 25%,transparent 75%,#0B140E 75%);
+    background-size:12px 12px;
+    background-position:0 0,6px 6px;
+    opacity:.9;
+  }
+  .checker-sm{height:7px;background-size:9px 9px;background-position:0 0,4.5px 4.5px}
+
+  /* Section Title Design */
+  .sec-title{
+    font-size:clamp(1.85rem,4.4vw,2.9rem);
+    line-height:1.05;
+    font-weight:800;
+    text-transform:uppercase;
+    color:var(--ink);
+    display:flex;align-items:center;gap:.75rem;
+  }
+  .sec-title .sq{
+    width:.6em;height:.6em;background:var(--brand);flex:none;
+    box-shadow:0 0 0 4px var(--brand-glow);
+    transform:translateY(-.02em);
+  }
+  .sec-title .txt{position:relative}
+  .sec-title .txt::after{
+    content:"";position:absolute;left:0;right:-6px;bottom:-2px;height:6px;background:var(--brand);
+    opacity:.15;z-index:-1;
+  }
+
+  /* Cards & Callouts */
+  .card{
+    background:#fff;border:1px solid var(--line);border-radius:3px;
+    padding:1.25rem 1.35rem;position:relative;
+  }
+  .card-accent::before{
+    content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--brand);
+  }
+  .card-cast::before{
+    content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:#0A4C1E;
+  }
+  .callout{
+    background:linear-gradient(135deg,var(--brand) 0%,var(--brand-dk) 100%);
+    color:#fff;border-radius:3px;position:relative;overflow:hidden;
+  }
+  .callout::after{
+    content:"";position:absolute;inset:0 auto 0 0;width:9px;
+    background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.85) 0 6px,rgba(0,0,0,.25) 6px 12px);
+    opacity:.75;
+  }
+  .callout .ctitle{
+    font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;
+    letter-spacing:.05em;font-size:1.3rem;line-height:1.1;
+  }
+  .callout-dark{
+    background:#0D1711;color:#fff;border:1px solid rgba(32,175,76,.3);position:relative;overflow:hidden;
+  }
+  .callout-dark::after{
+    content:"";position:absolute;inset:0 auto 0 0;width:8px;background:var(--brand);
+  }
+
+  .note{background:var(--cream);border:1px dashed #BFD4C6;border-radius:3px}
+  .tip-badge{
+    display:inline-flex;align-items:center;gap:.4rem;background:var(--ink);color:#fff;
+    font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.1em;
+    font-weight:700;font-size:.74rem;padding:.3rem .65rem;border-radius:2px;
+  }
+  .tip-badge-green{
+    display:inline-flex;align-items:center;gap:.4rem;background:var(--brand);color:#fff;
+    font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.1em;
+    font-weight:700;font-size:.74rem;padding:.3rem .65rem;border-radius:2px;
+  }
+
+  /* Step layout */
+  .step{display:flex;gap:.9rem;align-items:flex-start}
+  .step .no{
+    flex:none;width:2.1rem;height:2.1rem;background:var(--brand);color:#fff;font-weight:800;
+    font-family:'Barlow Condensed',sans-serif;display:grid;place-items:center;font-size:1.05rem;
+  }
+  .step .no.dark{background:var(--ink)}
+
+  .kv{display:flex;gap:.75rem}
+  .kv .dot{flex:none;width:.55rem;height:.55rem;background:var(--brand);margin-top:.5rem;border-radius:1px}
+  .kv p{margin:0}
+
+  /* Navigation Links */
+  a.toc-link{
+    display:flex;gap:.55rem;align-items:center;
+    padding:.42rem .55rem;border-left:3px solid transparent;border-radius:2px;
+    font-size:.85rem;font-weight:600;color:#546258;text-transform:uppercase;
+    font-family:'Barlow Condensed',sans-serif;letter-spacing:.05em;line-height:1.2;
+    transition:.15s;
+  }
+  a.toc-link:hover{background:#EBF5EE;color:var(--ink)}
+  a.toc-link .n{font-size:.72rem;color:#8E9E93;font-weight:700}
+  a.toc-link.active{background:#fff;border-left-color:var(--brand);color:var(--brand);box-shadow:0 1px 3px rgba(0,0,0,.06)}
+  a.toc-link.active .n{color:var(--brand)}
+
+  /* Photographic figures (Option B richness) */
+  .figure{position:relative;overflow:hidden;border-radius:3px;background:#E3EDE5}
+  .figure img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .65s ease}
+  .figure:hover img{transform:scale(1.05)}
+  .figure figcaption{
+    position:absolute;left:0;right:0;bottom:0;padding:.65rem .85rem;
+    background:linear-gradient(to top,rgba(11,20,14,.92) 0%,rgba(11,20,14,0.4) 75%,transparent 100%);
+    color:#fff;font-size:.78rem;font-weight:600;letter-spacing:.01em;
+  }
+  .figure-badge{
+    position:absolute;top:.75rem;left:.75rem;background:rgba(11,20,14,.88);
+    backdrop-filter:blur(4px);color:#fff;padding:.22rem .55rem;
+    font-family:'Barlow Condensed',sans-serif;font-size:.72rem;font-weight:700;
+    text-transform:uppercase;letter-spacing:.08em;border-left:3px solid var(--brand);
+  }
+
+  /* Checklist elements */
+  .chk{
+    display:flex;gap:.75rem;align-items:flex-start;cursor:pointer;
+    padding:.6rem .75rem;border:1px solid var(--line);background:#fff;border-radius:2px;
+    transition:.15s;
+  }
+  .chk:hover{border-color:#BAD4C2;background:#FAFDFB}
+  .chk input{
+    appearance:none;width:1.1rem;height:1.1rem;border:2px solid var(--brand);
+    flex:none;margin-top:.15rem;position:relative;cursor:pointer;border-radius:2px;
+  }
+  .chk input:checked{background:var(--brand)}
+  .chk input:checked::after{
+    content:"";position:absolute;left:.32rem;top:.08rem;width:.3rem;height:.6rem;
+    border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg);
+  }
+  .chk input:checked ~ .lbl{text-decoration:line-through;color:#8E9F94}
+  .lbl{font-size:.92rem;font-weight:500;line-height:1.45}
+
+  .brandlogo{font-family:'Barlow Condensed',sans-serif;font-weight:800;letter-spacing:.02em;line-height:.88}
+  .wrap-shadow{box-shadow:0 20px 42px -18px rgba(11,20,14,.38)}
+  ::selection{background:var(--brand);color:#fff}
+
+  /* Big Hero Headline */
+  .hero-title{
+    font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;
+    line-height:.9;letter-spacing:.005em;
+  }
+  #progressbar{transition:width .12s linear}
+
+  .tool{
+    background:#fff;border:1px solid var(--line);border-radius:2px;padding:.85rem .5rem;
+    display:flex;flex-direction:column;align-items:center;gap:.35rem;text-align:center;
+    font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#2E3630;
+  }
+  .tool span.i{font-size:1.4rem;line-height:1}
+
+  /* Smart Quiz styling */
+  .quiz-card{border:1px solid var(--line);border-radius:3px;background:#fff;position:relative;overflow:hidden}
+  .quiz-card::before{
+    content:"";position:absolute;top:0;left:0;height:4px;width:100%;
+    background:linear-gradient(90deg,var(--brand),#86DBA3);opacity:.95;
+  }
+  .quiz-q{font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:1.15rem;color:var(--ink);line-height:1.2}
+  .quiz-opt{
+    display:flex;align-items:center;gap:.75rem;padding:.6rem .75rem;
+    border:1px solid var(--line);border-radius:2px;background:#fff;cursor:pointer;
+    font-size:.92rem;font-weight:500;color:#354038;transition:.15s;
+  }
+  .quiz-opt:hover{border-color:#BAD4C2;background:#F4FAF6}
+  .quiz-opt input{
+    appearance:none;width:1.1rem;height:1.1rem;border:2px solid var(--brand);
+    border-radius:50%;flex:none;position:relative;cursor:pointer;
+  }
+  .quiz-opt input:checked{background:var(--brand);box-shadow:inset 0 0 0 2.5px #fff}
+  .quiz-opt.selected-correct{border-color:#16A34A;background:#F0FDF4;color:#166534;font-weight:600}
+  .quiz-opt.selected-wrong{border-color:#EF4444;background:#FEF2F2;color:#991B1B}
+
+  /* Tables */
+  .spec-table th{background:#F0F6F2;padding:.7rem .85rem;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--ink);border-bottom:2px solid var(--line)}
+  .spec-table td{padding:.75rem .85rem;font-size:.9rem;border-bottom:1px solid var(--line);vertical-align:top}
+  .spec-table tr:hover td{background:#F9FCFA}
+
+  @media print{
+    .no-print{display:none !important}
+    body{background:#fff}
+    section{break-inside:avoid;page-break-inside:avoid}
+    a.toc-link{color:#333}
+    .quiz-card{break-inside:avoid}
+  }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- Reading Progress Bar -->
+<div class="fixed top-0 left-0 right-0 h-1 bg-transparent z-[60] no-print">
+  <div id="progressbar" class="h-full bg-[color:var(--brand)] w-0"></div>
+</div>
+
+<!-- ================= STICKY HEADER ================= -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-[color:var(--line)] no-print">
+  <div class="hazard h-[6px]"></div>
+  <div class="max-w-[1360px] mx-auto px-4 sm:px-6 flex items-center gap-3.5 h-[64px]">
+    <a href="#top" class="flex items-center gap-2.5 shrink-0" title="NOAF Advertising LLC – Digital Wide Format Products">
+      <!-- Official UNEDITED NOAF logo file -->
+      <img id="brandLogo" class="h-10 sm:h-12 w-auto object-contain"
+           src="https://media.licdn.com/dms/image/v2/C4D0BAQGNu-vA1-0qXQ/company-logo_200_200/company-logo_200_200/0/1630551200380/noaf_advertising_llc_graphics_trading_division_logo?e=2147483647&v=beta&t=bKZmHxMqkBm0sfEwj52TPo7ZpLOxd4BrIEJb6Ax2m1s"
+           alt="NOAF Advertising LLC — Digital Wide Format Products"
+           onerror="noafLogoFail(this)">
+    </a>
+    <span class="hidden md:block h-7 w-px bg-[color:var(--line)]"></span>
+    <div class="hidden md:block leading-tight">
+      <div class="brandlogo text-[1.1rem] text-[color:var(--ink)] uppercase">Vehicle Media: A Guide to Brand Visibility</div>
+      <div class="text-[0.68rem] font-bold tracking-[.18em] text-[color:var(--brand)] uppercase">Your Brand. In Motion.</div>
+    </div>
+    <div class="ml-auto flex items-center gap-2 sm:gap-3">
+      <div class="hidden lg:flex items-center gap-2 text-[0.68rem] font-bold uppercase tracking-wider text-[color:var(--gray)]">
+        <span>Mastery Quiz</span>
+        <span class="inline-block w-20 h-2 bg-[#E3EFE6] rounded-full overflow-hidden align-middle">
+          <span id="quizScoreBar" class="block h-full w-0 bg-[color:var(--brand)] transition-all"></span>
+        </span>
+        <span id="quizScoreText" class="text-[color:var(--ink)] font-bold">0%</span>
+      </div>
+      <a href="#quick-ref" class="hidden sm:inline-block text-[0.72rem] font-extrabold uppercase tracking-wider px-3 py-2 border border-[color:var(--line)] hover:border-[color:var(--brand)] hover:text-[color:var(--brand)] transition">Quick Ref</a>
+      <a href="#polymeric" class="hidden sm:inline-block text-[0.72rem] font-extrabold uppercase tracking-wider px-3 py-2 border border-[color:var(--line)] hover:border-[color:var(--brand)] hover:text-[color:var(--brand)] transition">Polymeric</a>
+      <a href="#cast" class="hidden sm:inline-block text-[0.72rem] font-extrabold uppercase tracking-wider px-3 py-2 border border-[color:var(--line)] hover:border-[color:var(--brand)] hover:text-[color:var(--brand)] transition">Cast</a>
+      <a href="#manual-13" class="hidden sm:inline-block text-[0.72rem] font-extrabold uppercase tracking-wider px-3 py-2 border border-[color:var(--line)] hover:border-[color:var(--brand)] hover:text-[color:var(--brand)] transition">13-Step Manual</a>
+      <a href="#quiz-section" class="text-[0.7rem] font-extrabold uppercase tracking-wider px-3.5 py-2 bg-[color:var(--brand)] text-white hover:bg-[color:var(--brand-dk)] transition shadow-sm">Take Quiz</a>
+      <button onclick="window.print()" class="hidden sm:inline-block text-[0.72rem] font-extrabold uppercase tracking-wider px-3 py-2 border border-[color:var(--line)] hover:border-[color:var(--ink)] transition">Print</button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO SHOWCASE ================= -->
+<main id="top">
+<section class="relative bg-white overflow-hidden border-b border-[color:var(--line)]">
+  <div class="max-w-[1360px] mx-auto px-4 sm:px-6 pt-8 pb-12 lg:pt-12 lg:pb-16 grid lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+    
+    <!-- Left Hero Column: Brand, Tagline & Description -->
+    <div class="lg:col-span-7">
+      <!-- Official UNEDITED NOAF logo file -->
+      <div class="mb-5 inline-block">
+        <img class="h-28 sm:h-36 w-auto object-contain"
+             src="https://media.licdn.com/dms/image/v2/C4D0BAQGNu-vA1-0qXQ/company-logo_200_200/company-logo_200_200/0/1630551200380/noaf_advertising_llc_graphics_trading_division_logo?e=2147483647&v=beta&t=bKZmHxMqkBm0sfEwj52TPo7ZpLOxd4BrIEJb6Ax2m1s"
+             alt="NOAF Advertising LLC — Digital Wide Format Products"
+             onerror="noafLogoFail(this)">
+      </div>
+
+      <div class="flex flex-wrap items-center gap-2.5 mb-3">
+        <span class="tip-badge-green">Professional Technical Manual</span>
+        <span class="text-[0.74rem] font-bold uppercase tracking-[.18em] text-[color:var(--gray)]">Digital Wide Format Products</span>
+      </div>
+
+      <h1 class="hero-title text-[color:var(--ink)] text-[clamp(2.4rem,7vw,4.8rem)]">
+        VEHICLE MEDIA:<br>
+        <span class="text-[color:var(--brand)]">A GUIDE TO BRAND</span><br>
+        VISIBILITY
+      </h1>
+
+      <div class="mt-4 flex items-center gap-3">
+        <span class="h-px w-8 bg-[color:var(--brand)]"></span>
+        <p class="font-extrabold text-[1.2rem] sm:text-[1.35rem] tracking-[.1em] uppercase text-[color:var(--ink)]">
+          Tagline: <span class="text-[color:var(--brand)]">Your Brand. In Motion.</span>
+        </p>
+      </div>
+
+      <p class="mt-5 text-[1.02rem] leading-relaxed text-[#414E45] max-w-[62ch]">
+        The comprehensive masterclass combining the <strong>Quick Reference Guide</strong>, the full 
+        <strong>Polymeric Series (Semi-Curve Vinyl Film)</strong> application guide, the advanced 
+        <strong>Cast Film Series</strong> technical specification for deep recesses & rivets, and the 
+        standardized <strong>13-Step Shop Operation Manual</strong> from pre-construction to final acceptance.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#quick-ref" class="px-5 py-3.5 bg-[color:var(--brand)] text-white text-[0.82rem] font-extrabold uppercase tracking-[.14em] hover:bg-[color:var(--brand-dk)] transition shadow-md">Quick Reference Guide</a>
+        <a href="#polymeric" class="px-5 py-3.5 border-2 border-[color:var(--brand)] text-[color:var(--brand)] text-[0.82rem] font-extrabold uppercase tracking-[.14em] hover:bg-[color:var(--brand)] hover:text-white transition">Polymeric Guide</a>
+        <a href="#cast" class="px-5 py-3.5 border-2 border-[color:var(--ink)] text-[color:var(--ink)] text-[0.82rem] font-extrabold uppercase tracking-[.14em] hover:bg-[color:var(--ink)] hover:text-white transition">Cast Film Guide</a>
+        <a href="#manual-13" class="px-5 py-3.5 bg-[color:var(--ink)] text-white text-[0.82rem] font-extrabold uppercase tracking-[.14em] hover:bg-[color:var(--brand-darker)] transition">13-Step Manual</a>
+      </div>
+    </div>
+
+    <!-- Right Hero Column: Premium Photo Showcase (Option B richness) -->
+    <div class="lg:col-span-5">
+      <div class="grid grid-cols-2 gap-3.5">
+        <!-- Main high-impact wrap photo -->
+        <figure class="figure col-span-2 aspect-[16/10] wrap-shadow">
+          <span class="figure-badge">Commercial Fleet Impact</span>
+          <img src="https://images.pexels.com/photos/36045954/pexels-photo-36045954.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Customized vehicle wrap in workshop" loading="lazy">
+          <figcaption>Your Brand. In Motion. High-impact wide format vehicle media.</figcaption>
+        </figure>
+
+        <!-- Precision installation photo -->
+        <figure class="figure aspect-[4/3] wrap-shadow">
+          <span class="figure-badge">Precision Forming</span>
+          <img src="https://images.pexels.com/photos/10162529/pexels-photo-10162529.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Heat gun forming vinyl on curved panel" loading="lazy">
+          <figcaption>Controlled heat (90°C–110°C post-heat)</figcaption>
+        </figure>
+
+        <!-- Hood application photo -->
+        <figure class="figure aspect-[4/3] wrap-shadow">
+          <span class="figure-badge">Center-Line Method</span>
+          <img src="https://images.pexels.com/photos/10126665/pexels-photo-10126665.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Applying vinyl film to a hood" loading="lazy">
+          <figcaption>30° squeegee angle center outward</figcaption>
+        </figure>
+      </div>
+
+      <div class="grid grid-cols-3 gap-2 mt-4">
+        <div class="checker checker-sm"></div>
+        <div class="checker checker-sm"></div>
+        <div class="checker checker-sm"></div>
+      </div>
+    </div>
+
+  </div>
+  <div class="hazard h-[6px]"></div>
+</section>
+
+<!-- ================= MAIN CONTENT LAYOUT ================= -->
+<div class="max-w-[1360px] mx-auto px-4 sm:px-6 py-10 lg:py-14 grid lg:grid-cols-12 gap-10">
+
+  <!-- ================= STICKY SIDEBAR (TOC & CHECKLIST) ================= -->
+  <aside id="toc" class="lg:col-span-3 lg:sticky lg:top-[84px] lg:self-start lg:max-h-[calc(100vh-100px)] lg:overflow-auto no-print">
+    <div class="border border-[color:var(--line)] bg-white rounded-2px shadow-sm">
+      <div class="hazard h-[5px]"></div>
+      <div class="p-3.5">
+        <div class="brandlogo text-[1.2rem] uppercase text-[color:var(--ink)] px-1 pb-1">Technical Index</div>
+        <div class="px-1 pb-2.5">
+          <input id="tocSearch" type="search" placeholder="Filter topics & steps…" class="w-full text-[0.8rem] px-3 py-2 border border-[color:var(--line)] outline-none focus:border-[color:var(--brand)] rounded-1px">
+        </div>
+
+        <nav id="tocNav" class="space-y-0.5 max-h-[48vh] overflow-y-auto pr-1"></nav>
+
+        <!-- Checklist progress -->
+        <div class="mt-3.5 pt-3 border-t border-[color:var(--line)] px-1">
+          <div class="flex items-center justify-between text-[0.7rem] font-bold uppercase tracking-wider text-[color:var(--gray)] mb-1">
+            <span>Quiz Mastery</span><span id="pct" class="text-[color:var(--brand)] font-bold">0%</span>
+          </div>
+          <div class="h-2 bg-[#E5EFE7] rounded-full overflow-hidden">
+            <div id="pctbar" class="h-full w-0 bg-[color:var(--brand)] transition-all"></div>
+          </div>
+          <div class="mt-2.5 flex items-center justify-between">
+            <span id="sidebarTasks" class="text-[0.68rem] text-[color:var(--gray)] font-semibold">0/15 checkpoints</span>
+            <button id="resetBtn" onclick="resetAll()" class="text-[0.66rem] font-extrabold uppercase tracking-wider text-[color:var(--gray)] hover:text-[color:var(--brand)]">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN ARTICLE COLUMN ================= -->
+  <div class="lg:col-span-9 space-y-16">
+
+    <!-- ===================================================================
+         PART 1: QUICK REFERENCE GUIDE
+         =================================================================== -->
+    <section id="quick-ref" data-title="Quick Reference Guide" class="scroll-mt-24">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="tip-badge-green">Part I · Core Standards</span>
+        <span class="text-[0.75rem] font-bold uppercase tracking-[.18em] text-[color:var(--gray)]">All Vinyl Formats</span>
+      </div>
+      <h2 class="sec-title"><span class="sq"></span><span class="txt">Quick Reference Guide</span></h2>
+      <p class="mt-3 text-[1.1rem] font-semibold text-[color:var(--ink)]">
+        Professional Recommendations for Optimum Vehicle Wrap Performance
+      </p>
+
+      <!-- 8 Golden Parameters Grid -->
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        
+        <!-- Surface Prep -->
+        <div class="card card-accent">
+          <div class="flex items-center gap-2 text-[color:var(--brand)] mb-1.5">
+            <span class="text-xl">🧽</span>
+            <h3 class="font-extrabold text-[1rem] uppercase tracking-wide text-[color:var(--ink)]">Surface Preparation</h3>
+          </div>
+          <p class="text-[0.9rem] leading-relaxed text-[#46514A]">
+            Ensure the application surface is clean, dry, and free from dust, grease, wax, silicone, and other contaminants before installation.
+          </p>
+        </div>
+
+        <!-- Film Selection -->
+        <div class="card card-accent">
+          <div class="flex items-center gap-2 text-[color:var(--brand)] mb-1.5">
+            <span class="text-xl">🎯</span>
+            <h3 class="font-extrabold text-[1rem] uppercase tracking-wide text-[color:var(--ink)]">Film Selection</h3>
+          </div>
+          <p class="text-[0.88rem] leading-relaxed text-[#46514A]">
+            <strong>Select the Right Film:</strong><br>
+            • <strong>Cast</strong> – Recommended for full wraps, complex curves, deep recesses, and long-term applications.<br>
+            • <strong>Polymeric</strong> – Ideal for flat surfaces, gentle curves, and medium-term graphics.
+          </p>
+        </div>
+
+        <!-- Temperature -->
+        <div class="card card-accent">
+          <div class="flex items-center gap-2 text-[color:var(--brand)] mb-1.5">
+            <span class="text-xl">🌡️</span>
+            <h3 class="font-extrabold text-[1rem] uppercase tracking-wide text-[color:var(--ink)]">Temperature</h3>
+          </div>
+          <p class="text-[0.9rem] leading-relaxed text-[#46514A]">
+            The recommended application temperature is minimum <strong>+10°C / +50°F</strong>. Ideal wrap bay ambient temperature is <strong>15°C–25°C</strong>.
+          </p>
+        </div>
+
+        <!-- Stretch Control -->
+        <div class="card card-accent">
+          <div class="flex items-center gap-2 text-[color:var(--brand)] mb-1.5">
+            <span class="text-xl">↔️</span>
+            <h3 class="font-extrabold text-[1rem] uppercase tracking-wide text-[color:var(--ink)]">Stretch Control</h3>
+          </div>
+          <p class="text-[0.9rem] leading-relaxed text-[#46514A]">
+            Stretch the film only as required. Overstretching can reduce dimensional stability and long-term performance.
+          </p>
+        </div>
+
+        <!-- Post Heating -->
+        <div class="card card-accent">
+          <div class="flex items-center gap-2 text-[color:var(--brand)] mb-1.5">
+            <span class="text-xl">🔥</span>
+            <h3 class="font-extrabold text-[1rem] uppercase tracking-wide text-[color:var(--ink)]">Post Heating</h3>
+          </div>
+          <p class="text-[0.9rem] leading-relaxed text-[#46514A]">
+            The temperature should be between <strong>90°C and 110°C</strong>; check with the laser thermometer. Permanently locks vinyl shape memory.
+          </p>
+        </div>
+
+        <!-- Lamination -->
+        <div class="card card-accent">
+          <div class="flex items-center gap-2 text-[color:var(--brand)] mb-1.5">
+            <span class="text-xl">⏱️</span>
+            <h3 class="font-extrabold text-[1rem] uppercase tracking-wide text-[color:var(--ink)]">Lamination</h3>
+          </div>
+          <p class="text-[0.9rem] leading-relaxed text-[#46514A]">
+            Leave a drying time of at least <strong>24 hours</strong> before laminating, cutting or applying it. Touch dry time is typically 10 minutes.
+          </p>
+        </div>
+
+        <!-- Edge Finishing -->
+        <div class="card card-accent">
+          <div class="flex items-center gap-2 text-[color:var(--brand)] mb-1.5">
+            <span class="text-xl">✂️</span>
+            <h3 class="font-extrabold text-[1rem] uppercase tracking-wide text-[color:var(--ink)]">Edge Finishing</h3>
+          </div>
+          <p class="text-[0.9rem] leading-relaxed text-[#46514A]">
+            Apply firm pressure along all edges and trim lines to ensure complete adhesion and prevent lifting over time. Leave a 2–3mm wrap margin.
+          </p>
+        </div>
+
+        <!-- Cure Time -->
+        <div class="card card-accent">
+          <div class="flex items-center gap-2 text-[color:var(--brand)] mb-1.5">
+            <span class="text-xl">⏳</span>
+            <h3 class="font-extrabold text-[1rem] uppercase tracking-wide text-[color:var(--ink)]">Cure Time</h3>
+          </div>
+          <p class="text-[0.9rem] leading-relaxed text-[#46514A]">
+            Avoid washing or exposing the wrapped vehicle to harsh weather conditions for at least <strong>24–48 hours</strong> after installation. (1 week before full wash).
+          </p>
+        </div>
+
+        <!-- Storage -->
+        <div class="card card-accent">
+          <div class="flex items-center gap-2 text-[color:var(--brand)] mb-1.5">
+            <span class="text-xl">📦</span>
+            <h3 class="font-extrabold text-[1rem] uppercase tracking-wide text-[color:var(--ink)]">Storage</h3>
+          </div>
+          <p class="text-[0.9rem] leading-relaxed text-[#46514A]">
+            Store rolls vertically in their original packaging in a cool, dry environment (<strong>15°C–25°C</strong>, relative humidity <strong>30%–70%</strong>) away from direct sunlight.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Quick Interactive Film Selector -->
+      <div class="mt-8 bg-[color:var(--cream)] border border-[#C5D8CB] rounded-3px p-5 md:p-6">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+          <div>
+            <span class="tip-badge">Interactive Tool</span>
+            <h3 class="brandlogo text-[1.5rem] uppercase text-[color:var(--ink)] mt-1">Cast vs. Polymeric Selector</h3>
+            <p class="text-[0.88rem] text-[color:var(--gray)]">Select your vehicle contour profile to get the recommended NOAF film series:</p>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-2.5">
+          <button onclick="pickFilm('flat')" class="film-tab active p-3 bg-white border border-[color:var(--line)] rounded text-left transition hover:border-[color:var(--brand)]">
+            <div class="font-bold text-[0.9rem] text-[color:var(--ink)]">1. Flat Panels</div>
+            <div class="text-[0.74rem] text-[color:var(--gray)] mt-0.5">Doors, box vans, flat sides</div>
+          </button>
+          <button onclick="pickFilm('semi')" class="film-tab p-3 bg-white border border-[color:var(--line)] rounded text-left transition hover:border-[color:var(--brand)]">
+            <div class="font-bold text-[0.9rem] text-[color:var(--ink)]">2. Gentle / Semi Curves</div>
+            <div class="text-[0.74rem] text-[color:var(--gray)] mt-0.5">Bonnet crowns, gentle arches</div>
+          </button>
+          <button onclick="pickFilm('deep')" class="film-tab p-3 bg-white border border-[color:var(--line)] rounded text-left transition hover:border-[color:var(--brand)]">
+            <div class="font-bold text-[0.9rem] text-[color:var(--ink)]">3. Deep Recesses</div>
+            <div class="text-[0.74rem] text-[color:var(--gray)] mt-0.5">Van body grooves, bumpers</div>
+          </button>
+          <button onclick="pickFilm('rivets')" class="film-tab p-3 bg-white border border-[color:var(--line)] rounded text-left transition hover:border-[color:var(--brand)]">
+            <div class="font-bold text-[0.9rem] text-[color:var(--ink)]">4. Rivets & 3D Shapes</div>
+            <div class="text-[0.74rem] text-[color:var(--gray)] mt-0.5">Commercial trucks, rivets</div>
+          </button>
+        </div>
+        <div id="filmResult" class="mt-4 p-4 bg-white border-l-4 border-[color:var(--brand)] text-[0.92rem] text-[#354038] leading-relaxed">
+          <strong>Recommended: Polymeric Series (Semi-Curve Vinyl Film)</strong> — Ideal for flat surfaces, straight panels, and gentle vehicle contours. Delivers reliable adhesion with exceptional economy for medium-term fleet graphics.
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         PART 2: POLYMERIC SERIES — SEMI CURVE VINYL FILM
+         =================================================================== -->
+    <section id="polymeric" data-title="Polymeric Series: Semi Curve" class="scroll-mt-24">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="tip-badge">Part II · Product Specification</span>
+        <span class="text-[0.75rem] font-bold uppercase tracking-[.18em] text-[color:var(--brand)]">Medium-Term Fleet</span>
+      </div>
+      <h2 class="sec-title"><span class="sq"></span><span class="txt">Polymeric Series</span></h2>
+      <div class="text-[1.25rem] font-extrabold uppercase tracking-wide text-[color:var(--brand-dk)] mt-1">
+        SEMI CURVE VINYL FILM — Professional Application Guide
+      </div>
+      <p class="mt-2 text-[1rem] font-semibold text-[color:var(--ink)]">
+        POLYMERIC FILMS: Engineered for Reliable Performance on Flat &amp; Gently Curved Surfaces
+      </p>
+      <p class="mt-2 text-[0.96rem] leading-relaxed text-[#414E45] max-w-[76ch]">
+        <em>Professional Installation for Superior Performance:</em> Semi-Curve Vinyl is specially developed for vehicle graphics and applications involving slight to moderate curves, contours, and recessed areas. With proper surface preparation and installation techniques, it provides reliable adhesion and an attractive appearance across various vehicle applications.
+      </p>
+
+      <!-- Suitable Application Surfaces Table -->
+      <div class="mt-6 border border-[color:var(--line)] rounded-2px overflow-hidden bg-white">
+        <div class="hazard h-[4px]"></div>
+        <div class="p-4 bg-[color:var(--cream)] border-b border-[color:var(--line)] flex items-center justify-between">
+          <h3 class="brandlogo text-[1.25rem] uppercase text-[color:var(--ink)]">Suitable Application Surfaces</h3>
+          <span class="text-[0.72rem] font-bold uppercase tracking-wider text-[color:var(--gray)]">Surface Compatibility Guide</span>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left spec-table">
+            <thead>
+              <tr>
+                <th class="w-1/2 text-green-800 bg-green-50/70">✔ Recommended Surfaces</th>
+                <th class="w-1/2 text-red-800 bg-red-50/70">✖ Not Recommended Surfaces</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="font-medium text-[#2E3831]">Painted vehicle panels</td>
+                <td class="font-medium text-[#7A2828]">Textured or rough surfaces</td>
+              </tr>
+              <tr>
+                <td class="font-medium text-[#2E3831]">Glass surfaces, PVC, Melamine</td>
+                <td class="font-medium text-[#7A2828]">Acrylic painted surfaces</td>
+              </tr>
+              <tr>
+                <td class="font-medium text-[#2E3831]">Steel &amp; Aluminium</td>
+                <td class="font-medium text-[#7A2828]">Unpainted bumpers and plastic trims</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Surface Suitability Levels -->
+      <div class="mt-8">
+        <h3 class="brandlogo text-[1.4rem] uppercase text-[color:var(--ink)] flex items-center gap-2">
+          <span class="sq" style="width:.5em;height:.5em;background:var(--brand)"></span>SURFACE SUITABILITY
+        </h3>
+        <p class="mt-2 text-[0.95rem] text-[#46514A]">
+          Before installation, carefully assess the vehicle surface and identify the level of curvature:
+        </p>
+        <div class="mt-4 grid sm:grid-cols-2 gap-4">
+          <div class="card card-accent">
+            <h4 class="font-extrabold text-[0.98rem] uppercase text-[color:var(--ink)]">Flat &amp; Slightly Curved Surfaces</h4>
+            <p class="mt-1.5 text-[0.9rem] leading-relaxed text-[#46514A]">
+              Performs effectively on flat panels and gently curved vehicle areas, providing a smooth and consistent finish.
+            </p>
+          </div>
+          <div class="card card-accent">
+            <h4 class="font-extrabold text-[0.98rem] uppercase text-[color:var(--ink)]">Moderate Curves</h4>
+            <p class="mt-1.5 text-[0.9rem] leading-relaxed text-[#46514A]">
+              The material can be applied to moderately contoured surfaces when installed using the correct application technique and controlled heating.
+            </p>
+          </div>
+          <div class="card card-accent">
+            <h4 class="font-extrabold text-[0.98rem] uppercase text-[color:var(--ink)]">Recessed Areas</h4>
+            <p class="mt-1.5 text-[0.9rem] leading-relaxed text-[#46514A]">
+              For shallow recessed sections, the film should be carefully positioned and applied gradually to minimise tension and ensure proper adhesion.
+            </p>
+          </div>
+          <div class="card card-accent">
+            <h4 class="font-extrabold text-[0.98rem] uppercase text-[color:var(--ink)]">Complex Curves Warning</h4>
+            <p class="mt-1.5 text-[0.9rem] leading-relaxed text-[#46514A]">
+              For deep recesses, sharp compound curves, extreme channels, and highly three-dimensional surfaces, a more conformable <strong>Cast Vinyl</strong> may be the preferred solution.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Surface Preparation & Pre-Installation Checks -->
+      <div class="mt-8 grid md:grid-cols-2 gap-6 items-start">
+        <div class="card card-accent">
+          <h3 class="brandlogo text-[1.3rem] uppercase text-[color:var(--ink)]">SURFACE PREPARATION</h3>
+          <p class="mt-2 text-[0.92rem] leading-relaxed text-[#46514A]">
+            Proper preparation is essential to achieve optimum adhesion and long-term performance. A perfectly prepared surface is the foundation of every successful installation:
+          </p>
+          <ul class="mt-3 space-y-2 text-[0.92rem] font-medium text-[#2E3831]">
+            <li class="flex items-center gap-2"><span class="text-[color:var(--brand)] font-bold">✔</span> Inspect the surface condition</li>
+            <li class="flex items-center gap-2"><span class="text-[color:var(--brand)] font-bold">✔</span> Ensure paint is fully cured</li>
+            <li class="flex items-center gap-2"><span class="text-[color:var(--brand)] font-bold">✔</span> Remove dust, grease, wax, silicone, tar and contaminants</li>
+            <li class="flex items-center gap-2"><span class="text-[color:var(--brand)] font-bold">✔</span> Surface must be clean, dry and smooth</li>
+          </ul>
+          <p class="mt-3 text-[0.86rem] text-[color:var(--gray)] italic">
+            A properly prepared surface helps ensure consistent adhesion and reduces the risk of lifting, edge failure, or contamination beneath the film.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <div class="note p-4">
+            <span class="tip-badge mb-1">Ideal Storage Conditions</span>
+            <p class="mt-2 text-[0.9rem] text-[#46514A]">To maintain the quality of the film:</p>
+            <ul class="mt-1 space-y-1 text-[0.9rem] font-semibold text-[color:var(--ink)]">
+              <li>• Store between <strong>15°C – 25°C</strong></li>
+              <li>• Relative humidity: <strong>30% – 70%</strong></li>
+            </ul>
+          </div>
+          <div class="callout p-4 pl-7">
+            <div class="ctitle text-[1.15rem]">Key Pre-Installation Checks: Paint Curing</div>
+            <p class="mt-2 text-[0.92rem] text-white/95">
+              Fresh paint should cure completely before wrapping:<br>
+              • <strong>Minimum 7 days at 25°C</strong><br>
+              • Air-dried automotive paint may require up to <strong>one month</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Polymeric Application Technique -->
+      <div class="mt-8">
+        <h3 class="brandlogo text-[1.4rem] uppercase text-[color:var(--ink)]">APPLICATION TECHNIQUE (5 Key Steps)</h3>
+        <div class="mt-4 space-y-3">
+          <div class="step"><div class="no">1</div><div><strong class="text-[color:var(--ink)]">Position the Graphic:</strong> Carefully align and position the vinyl before beginning the application.</div></div>
+          <div class="step"><div class="no">2</div><div><strong class="text-[color:var(--ink)]">Apply Gradually:</strong> Apply the film progressively using controlled pressure. Avoid forcing large areas of material onto the surface at one time.</div></div>
+          <div class="step"><div class="no">3</div><div><strong class="text-[color:var(--ink)]">Work from Flat Areas Towards Curves:</strong> Begin application on the flatter sections and gradually work towards the curved areas. This helps control the film and reduces unnecessary tension.</div></div>
+          <div class="step"><div class="no">4</div><div><strong class="text-[color:var(--ink)]">Use Controlled Heat:</strong> Heat may be used where necessary to improve flexibility and assist the film in conforming to moderate curves.</div></div>
+          <div class="step"><div class="no">5</div><div><strong class="text-[color:var(--ink)]">Avoid Excessive Stretching:</strong> Excessive stretching can create stress within the film and may increase the risk of lifting or shrinkage over time.</div></div>
+        </div>
+      </div>
+
+      <!-- Polymeric Curved Surfaces, Edges, Inspection -->
+      <div class="mt-8 grid md:grid-cols-3 gap-4">
+        <div class="card">
+          <div class="tip-badge-green mb-2">Curved Surfaces</div>
+          <p class="text-[0.9rem] leading-relaxed text-[#46514A]">
+            When applying Semi-Curve Vinyl to curved areas, correct tension management is essential. Allow the film to follow the natural contour:
+          </p>
+          <ul class="mt-2 space-y-1.5 text-[0.86rem] text-[#46514A]">
+            <li>• Do not overstretch material &amp; apply heat only where required.</li>
+            <li>• Avoid concentrating excessive tension in one area.</li>
+            <li>• Ensure film is secured along edges and transitions.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="tip-badge-green mb-2">Edge &amp; Finishing</div>
+          <p class="text-[0.9rem] leading-relaxed text-[#46514A]">
+            Inspect all edges and finishing areas carefully:
+          </p>
+          <ul class="mt-2 space-y-1.5 text-[0.86rem] text-[#46514A]">
+            <li>• All edges firmly adhered; no air bubbles or wrinkles remain.</li>
+            <li>• Excess material trimmed cleanly; corners secured.</li>
+            <li>• Pay special attention to areas exposed to wind, water, washing, and vehicle movement.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="tip-badge-green mb-2">Post-Application Inspection</div>
+          <p class="text-[0.9rem] leading-relaxed text-[#46514A]">
+            Conduct a complete vehicle inspection covering:
+          </p>
+          <ul class="mt-2 space-y-1.5 text-[0.86rem] text-[#46514A]">
+            <li>• Curved sections &amp; recessed areas.</li>
+            <li>• Panel gaps &amp; heated sections.</li>
+            <li>• Sections subjected to stretching or tension.</li>
+            <li>• Correct any wrinkles, trapped air or lifting before release.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Post Heating & Removal Protocol -->
+      <div class="mt-6 grid md:grid-cols-2 gap-4">
+        <div class="callout p-5 pl-8">
+          <div class="ctitle">Post Heating — The Key to Long-Term Performance</div>
+          <p class="mt-2 text-[0.92rem] leading-relaxed text-white/95">
+            Post heating is an essential stage of every professional installation. By reheating stretched areas to the recommended temperature of <strong>90°C – 110°C</strong>, the film becomes permanently stabilised, significantly reducing shrinkage and edge lifting while improving long-term durability.
+          </p>
+        </div>
+
+        <div class="card card-accent">
+          <h4 class="font-extrabold text-[1rem] uppercase text-[color:var(--ink)]">Vinyl Removal Protocol</h4>
+          <p class="mt-2 text-[0.92rem] leading-relaxed text-[#46514A]">
+            Gradual heating softens the adhesive, allowing the film to be removed cleanly while minimising adhesive residue and protecting the underlying substrate.
+          </p>
+          <ul class="mt-2.5 space-y-1.5 text-[0.9rem] font-semibold text-[color:var(--ink)]">
+            <li>• Heat the film to approximately <strong>60°C</strong></li>
+            <li>• Peel slowly at a <strong>70°–80° angle</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Care & Maintenance / Lamination / Pro Tips -->
+      <div class="mt-6 grid sm:grid-cols-3 gap-4">
+        <div class="card">
+          <h4 class="font-extrabold text-[0.95rem] uppercase text-[color:var(--ink)]">Care &amp; Maintenance</h4>
+          <ul class="mt-2 space-y-1.5 text-[0.86rem] text-[#46514A]">
+            <li>✔ Wait <strong>48 hours</strong> before washing</li>
+            <li>✔ Use pH-neutral automotive shampoo</li>
+            <li>✔ Soft cloth or moderate automatic wash</li>
+            <li>✔ Pressure washer at least <strong>50 cm</strong> away</li>
+            <li class="text-red-700 font-semibold">✖ Avoid solvents, strong chemicals, abrasives</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4 class="font-extrabold text-[0.95rem] uppercase text-[color:var(--ink)]">Lamination Tips</h4>
+          <ul class="mt-2 space-y-1.5 text-[0.86rem] text-[#46514A]">
+            <li>• Allow prints to dry completely before lamination</li>
+            <li>• Typical touch dry time: <strong>10 minutes</strong></li>
+            <li>• Recommended curing before lamination: <strong>24 hours</strong></li>
+            <li class="text-[color:var(--gray)] italic">Proper curing improves solvent evaporation and ensures better performance.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4 class="font-extrabold text-[0.95rem] uppercase text-[color:var(--ink)]">Professional Installation Tips</h4>
+          <ul class="mt-2 space-y-1.5 text-[0.86rem] text-[#46514A]">
+            <li>✔ Always install on a clean, dry surface</li>
+            <li>✔ Never overstretch the film</li>
+            <li>✔ Use a felt-edge squeegee for scratch-free finish</li>
+            <li>✔ Reheat all stretched areas after installation</li>
+            <li>✔ Avoid application on unpainted plastic trims</li>
+            <li>✔ Perform adhesion and compatibility tests</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Polymeric Slogan Callout -->
+      <div class="mt-5 p-4 bg-white border border-[color:var(--line)] text-center">
+        <p class="font-extrabold text-[1.1rem] tracking-[.08em] uppercase text-[color:var(--brand-darker)]">
+          Choose the Right Material. Apply with Precision. Deliver a Professional Finish.
+        </p>
+      </div>
+
+      <!-- Photographic evidence of Polymeric Application (Option B richness) -->
+      <div class="mt-6 grid grid-cols-2 gap-3.5">
+        <figure class="figure aspect-[16/10]">
+          <span class="figure-badge">Door &amp; Flat Panel Application</span>
+          <img src="https://images.pexels.com/photos/10162528/pexels-photo-10162528.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Applying blue vinyl wrap to a car door" loading="lazy">
+          <figcaption>Semi-Curve Vinyl: Working smoothly across side panels</figcaption>
+        </figure>
+        <figure class="figure aspect-[16/10]">
+          <span class="figure-badge">Microfiber Prep &amp; Alignment</span>
+          <img src="https://images.pexels.com/photos/10126661/pexels-photo-10126661.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Positioning wrap film on car hood" loading="lazy">
+          <figcaption>Positioning &amp; progressive application from flat to curves</figcaption>
+        </figure>
+      </div>
+
+      <!-- Polymeric Module Quiz -->
+      <div class="quiz-card mt-6 p-5" id="quiz-poly">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="inline-flex items-center gap-1 bg-[color:var(--brand)] text-white text-[0.65rem] font-extrabold uppercase tracking-widest px-2 py-0.5">Quiz</span>
+          <span class="text-[0.7rem] font-bold uppercase tracking-wider text-[color:var(--gray)]">Module · Polymeric Film Guide</span>
+        </div>
+        <h3 class="quiz-q mb-4">What is the required post-heating temperature range for stretched areas of Polymeric Semi-Curve vinyl?</h3>
+        <div class="space-y-2" data-correct="b">
+          <label class="quiz-opt"><input type="radio" name="qpoly" value="a"><span>A. 40°C – 50°C</span></label>
+          <label class="quiz-opt"><input type="radio" name="qpoly" value="b"><span>B. 90°C – 110°C (verified with laser thermometer)</span></label>
+          <label class="quiz-opt"><input type="radio" name="qpoly" value="c"><span>C. 150°C – 180°C</span></label>
+        </div>
+        <div class="mt-3 hidden result-msg" id="res-qpoly"></div>
+        <button onclick="checkQuizDirect('qpoly','res-qpoly','quiz-poly')" class="mt-4 px-4 py-2 bg-[color:var(--brand)] text-white text-[0.78rem] font-extrabold uppercase tracking-widest hover:bg-[color:var(--brand-dk)] transition">Check answer</button>
+      </div>
+
+    </section>
+
+    <!-- ===================================================================
+         PART 3: CAST FILM SERIES — CAST VINYL FILM
+         =================================================================== -->
+    <section id="cast" data-title="Cast Film Series: Deep Recess" class="scroll-mt-24">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="tip-badge">Part III · Advanced Film Specification</span>
+        <span class="text-[0.75rem] font-bold uppercase tracking-[.18em] text-[color:var(--brand-darker)]">Full Wraps &amp; Complex Curves</span>
+      </div>
+      <h2 class="sec-title"><span class="sq" style="background:#0A4C1E"></span><span class="txt">Cast Film Series</span></h2>
+      <div class="text-[1.25rem] font-extrabold uppercase tracking-wide text-[color:var(--brand-darker)] mt-1">
+        CAST VINYL FILM — Professional Application Guide
+      </div>
+      <p class="mt-2 text-[1rem] font-semibold text-[color:var(--ink)]">
+        CAST FILMS: Designed for complex surfaces. Engineered for precision.
+      </p>
+      <p class="mt-2 text-[0.96rem] leading-relaxed text-[#414E45] max-w-[76ch]">
+        Cast Vinyl is a premium vehicle wrapping material designed for highly curved, contoured, recessed, and three-dimensional surfaces. Its exceptional conformability allows the film to adapt smoothly to complex vehicle shapes while maintaining a professional and seamless appearance.
+      </p>
+
+      <!-- Surface Suitability (Cast) -->
+      <div class="mt-6 grid sm:grid-cols-2 gap-4">
+        <div class="card card-cast">
+          <h4 class="font-extrabold text-[0.98rem] uppercase text-[color:var(--ink)]">Flat &amp; Slightly Curved Surfaces</h4>
+          <p class="mt-1.5 text-[0.9rem] leading-relaxed text-[#46514A]">
+            Cast Vinyl can be applied smoothly to flat and gently curved surfaces while maintaining a consistent and professional finish.
+          </p>
+        </div>
+        <div class="card card-cast">
+          <h4 class="font-extrabold text-[0.98rem] uppercase text-[color:var(--ink)]">Complex Curves</h4>
+          <p class="mt-1.5 text-[0.9rem] leading-relaxed text-[#46514A]">
+            The material is designed to conform effectively around complex curves and contoured vehicle sections.
+          </p>
+        </div>
+        <div class="card card-cast">
+          <h4 class="font-extrabold text-[0.98rem] uppercase text-[color:var(--ink)]">Deep Recesses &amp; Channels</h4>
+          <p class="mt-1.5 text-[0.9rem] leading-relaxed text-[#46514A]">
+            Suitable for application into deep recesses and channels when installed using the correct technique, controlled heat, and proper tension management.
+          </p>
+        </div>
+        <div class="card card-cast">
+          <h4 class="font-extrabold text-[0.98rem] uppercase text-[color:var(--ink)]">Compound Curves</h4>
+          <p class="mt-1.5 text-[0.9rem] leading-relaxed text-[#46514A]">
+            For surfaces that curve in multiple directions, it provides the flexibility required to achieve a smooth and uniform application.
+          </p>
+        </div>
+      </div>
+
+      <!-- Surface Preparation for Cast -->
+      <div class="mt-6 card card-cast">
+        <h3 class="brandlogo text-[1.3rem] uppercase text-[color:var(--ink)]">SURFACE PREPARATION FOR CAST WRAPS</h3>
+        <p class="mt-2 text-[0.92rem] leading-relaxed text-[#46514A]">
+          Proper surface preparation is essential for achieving optimum adhesion and long-term performance. Before application:
+        </p>
+        <div class="mt-3 grid sm:grid-cols-2 gap-3 text-[0.9rem] text-[#354038]">
+          <div class="flex items-start gap-2"><span class="text-[color:var(--brand)] font-bold">✔</span> Ensure the vehicle surface is thoroughly cleaned and completely dry.</div>
+          <div class="flex items-start gap-2"><span class="text-[color:var(--brand)] font-bold">✔</span> Remove dust, dirt, grease, wax, silicone, and other contaminants.</div>
+          <div class="flex items-start gap-2"><span class="text-[color:var(--brand)] font-bold">✔</span> Pay special attention to deep recesses, panel gaps, edges, trims, and difficult-to-reach areas.</div>
+          <div class="flex items-start gap-2"><span class="text-[color:var(--brand)] font-bold">✔</span> Ensure all cleaning residues have been completely removed.</div>
+        </div>
+        <p class="mt-3 text-[0.85rem] text-[color:var(--gray)] italic">
+          A properly prepared surface helps achieve consistent adhesion and reduces the risk of lifting, edge failure, and contamination.
+        </p>
+      </div>
+
+      <!-- 5-Step Cast Application Technique -->
+      <div class="mt-8">
+        <h3 class="brandlogo text-[1.4rem] uppercase text-[color:var(--ink)]">APPLICATION TECHNIQUE — CAST VINYL</h3>
+        <div class="mt-4 space-y-3">
+          <div class="step"><div class="no dark">1</div><div><strong class="text-[color:var(--ink)]">Position the Film:</strong> Carefully align and position the vinyl before beginning the application. Ensure sufficient material is available to cover complex curves, recesses, and contoured areas without creating unnecessary tension.</div></div>
+          <div class="step"><div class="no dark">2</div><div><strong class="text-[color:var(--ink)]">Begin with Stable Areas:</strong> Where possible, start from a flat or stable section of the panel and gradually work towards more complex curves and recessed areas.</div></div>
+          <div class="step"><div class="no dark">3</div><div><strong class="text-[color:var(--ink)]">Apply with Controlled Pressure:</strong> Use smooth and consistent pressure during application. Avoid forcing the material into difficult areas too quickly.</div></div>
+          <div class="step"><div class="no dark">4</div><div><strong class="text-[color:var(--ink)]">Use Heat to Assist Conformability:</strong> Controlled heat can be used to increase the flexibility of the film and assist it in conforming to complex vehicle surfaces. Heat should always be applied carefully and evenly to avoid overheating the material.</div></div>
+          <div class="step"><div class="no dark">5</div><div><strong class="text-[color:var(--ink)]">Manage Tension Carefully:</strong> Although Cast Vinyl is highly conformable, excessive stretching should still be avoided. The film should be allowed to conform naturally wherever possible. Proper tension management is essential around deep recesses, sharp contours, and compound curves.</div></div>
+        </div>
+      </div>
+
+      <!-- Complex Curves & Deep Recesses Detailed Instructions -->
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="card card-cast">
+          <h4 class="font-extrabold text-[1rem] uppercase text-[color:var(--ink)]">Application on Complex Curves</h4>
+          <p class="mt-2 text-[0.9rem] leading-relaxed text-[#46514A]">
+            Cast Vinyl adapts to challenging shapes. When working on complex curves:
+          </p>
+          <ul class="mt-2.5 space-y-1.5 text-[0.88rem] text-[#46514A]">
+            <li>• Apply the material gradually.</li>
+            <li>• Use controlled heat where required.</li>
+            <li>• Avoid excessive stretching in one direction.</li>
+            <li>• Distribute tension evenly across the surface.</li>
+            <li>• Allow the film to relax before finalising difficult areas.</li>
+          </ul>
+        </div>
+
+        <div class="card card-cast">
+          <h4 class="font-extrabold text-[1rem] uppercase text-[color:var(--ink)]">Application in Deep Recesses &amp; Channels</h4>
+          <p class="mt-2 text-[0.9rem] leading-relaxed text-[#46514A]">
+            Deep recessed areas require special attention during installation:
+          </p>
+          <ul class="mt-2.5 space-y-1.5 text-[0.88rem] text-[#46514A]">
+            <li>• Apply the film progressively into the recess without forcing or overstretching.</li>
+            <li>• <strong>Avoid bridging the material</strong> across deep channels.</li>
+            <li>• Minimise excessive stretching.</li>
+            <li>• Ensure the material is properly seated within the recessed area.</li>
+            <li>• Check for tension or stress after application.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Edge & Finishing Techniques (Cast) -->
+      <div class="mt-6 card card-cast">
+        <h4 class="font-extrabold text-[1rem] uppercase text-[color:var(--ink)]">Edge &amp; Finishing Techniques</h4>
+        <p class="mt-1 text-[0.9rem] text-[#46514A]">
+          Once the vinyl has been applied, carefully complete all trimming and finishing work:
+        </p>
+        <div class="mt-3 grid sm:grid-cols-2 gap-2 text-[0.88rem] text-[#354038]">
+          <div>• All edges are firmly adhered and corners are properly secured.</div>
+          <div>• Excess material is trimmed cleanly.</div>
+          <div>• Recessed areas are fully checked; no air bubbles or wrinkles remain.</div>
+          <div>• High-tension areas are inspected carefully.</div>
+          <div class="sm:col-span-2">• Panel gaps and transitions are properly finished. Areas exposed to wind, water, regular washing, or frequent contact should receive particular attention during final inspection.</div>
+        </div>
+      </div>
+
+      <!-- APPLICATION OVER RIVETS (Special Section) -->
+      <div class="mt-8 callout-dark p-6 pl-9 rounded-2px">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="tip-badge-green">Critical Procedure</span>
+          <span class="text-[0.72rem] font-bold uppercase tracking-wider text-white/70">Commercial Trucks &amp; Trailers</span>
+        </div>
+        <h3 class="brandlogo text-[1.6rem] uppercase text-white">APPLICATION OVER RIVETS</h3>
+        <p class="mt-2 text-[0.94rem] leading-relaxed text-white/90 max-w-[70ch]">
+          When encountering rivets on truck bodies and commercial trailer panels, follow this exact temperature-calibrated sequence:
+        </p>
+        <div class="mt-4 grid sm:grid-cols-3 gap-4 text-white">
+          <div class="bg-white/10 p-4 rounded">
+            <div class="text-[0.72rem] font-extrabold uppercase tracking-wider text-[color:var(--brand)]">Step 1 · Gentle Preheat</div>
+            <div class="font-black text-2xl mt-1">40°C – 50°C</div>
+            <p class="text-[0.82rem] text-white/80 mt-1">Gently heat the film to soften it before forming around the rivet head.</p>
+          </div>
+          <div class="bg-white/10 p-4 rounded">
+            <div class="text-[0.72rem] font-extrabold uppercase tracking-wider text-[color:var(--brand)]">Step 2 · Circumferential Pressure</div>
+            <div class="font-black text-xl mt-1">Full 360° Seal</div>
+            <p class="text-[0.82rem] text-white/80 mt-1">Apply sufficient, even pressure around the complete rivet surface using rivet brush/tool.</p>
+          </div>
+          <div class="bg-white/10 p-4 rounded">
+            <div class="text-[0.72rem] font-extrabold uppercase tracking-wider text-[color:var(--brand)]">Step 3 · Post-Heat Rivet</div>
+            <div class="font-black text-2xl mt-1">80°C – 90°C</div>
+            <p class="text-[0.82rem] text-white/80 mt-1">Post-heat each rivet to 80°C–90°C to lock adhesion and eliminate tenting.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Designed for Complex Surfaces vs Prohibited -->
+      <div class="mt-6 grid sm:grid-cols-2 gap-4">
+        <div class="card card-cast">
+          <div class="text-[0.75rem] font-extrabold uppercase tracking-wider text-green-700 mb-1">✔ Designed For Complex Vehicle Surfaces</div>
+          <p class="text-[0.9rem] leading-relaxed text-[#354038]">
+            Door handles, curved body panels, recessed areas, convex sections, riveted surfaces, seams and overlaps, highly stretched areas.
+          </p>
+        </div>
+        <div class="card card-cast border-red-200">
+          <div class="text-[0.75rem] font-extrabold uppercase tracking-wider text-red-700 mb-1">✖ Application Should Be Avoided On</div>
+          <p class="text-[0.9rem] leading-relaxed text-[#354038]">
+            Window seals, body panel seals, unpainted trims &amp; unpainted plastic bumpers.
+          </p>
+        </div>
+      </div>
+
+      <!-- The Importance of Post-Heating / Cleaning / Removal -->
+      <div class="mt-6 grid md:grid-cols-3 gap-4">
+        <div class="callout p-5 pl-7">
+          <div class="ctitle text-[1.15rem]">The Importance of Post-Heating</div>
+          <p class="mt-2 text-[0.88rem] leading-relaxed text-white/95">
+            After application, areas that have undergone significant stretching or deformation should be heated to <strong>90°C to 110°C</strong>.
+            Post-heating helps reduce the shape memory of the vinyl and allows the pressure-sensitive adhesive to bond more effectively. Particularly important for: <em>concave, convex surfaces, rivets, deep recesses, edges and complex contours</em>.
+          </p>
+        </div>
+
+        <div class="card card-cast">
+          <h4 class="font-extrabold text-[0.95rem] uppercase text-[color:var(--ink)]">Cleaning and Maintenance</h4>
+          <p class="mt-2 text-[0.88rem] leading-relaxed text-[#46514A]">
+            The film should not be cleaned during the first: <strong>48 hours after application</strong>, as early cleaning may affect adhesive strength.
+          </p>
+        </div>
+
+        <div class="card card-cast">
+          <h4 class="font-extrabold text-[0.95rem] uppercase text-[color:var(--ink)]">4-Step Removal Procedure</h4>
+          <ol class="mt-2 space-y-1.5 text-[0.85rem] text-[#46514A]">
+            <li>1. Begin from a corner of the graphic, heat the film to approximately <strong>60°C</strong>.</li>
+            <li>2. Carefully lift the film without damaging the substrate.</li>
+            <li>3. Remove the film gradually while maintaining an angle of approximately <strong>70° to 80°</strong>.</li>
+            <li>4. Continue heating small sections while peeling slowly; maintain controlled heat, pulling angle, and speed.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Cast Film Slogan Callout -->
+      <div class="mt-5 p-4 bg-[color:var(--brand-soft)] border border-[color:var(--brand)] text-center rounded-2px">
+        <p class="font-extrabold text-[1.1rem] tracking-[.08em] uppercase text-[color:var(--brand-darker)]">
+          Maximum Conformability. Superior Performance. Professional Results.
+        </p>
+      </div>
+
+      <!-- Photographic evidence of Cast Heat Forming (Option B richness) -->
+      <div class="mt-6 grid grid-cols-2 gap-3.5">
+        <figure class="figure aspect-[16/10]">
+          <span class="figure-badge">Heat-Assisted Deep Recess</span>
+          <img src="https://images.pexels.com/photos/10126666/pexels-photo-10126666.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Heating wrap vinyl for adhesion" loading="lazy">
+          <figcaption>Controlled heat forming allows Cast vinyl to relax into compound curves</figcaption>
+        </figure>
+        <figure class="figure aspect-[16/10]">
+          <span class="figure-badge">Full Body Contour Adhesion</span>
+          <img src="https://images.pexels.com/photos/10126663/pexels-photo-10126663.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Hands smoothing wrap film on hood" loading="lazy">
+          <figcaption>Even pressure distribution without overstretching the film</figcaption>
+        </figure>
+      </div>
+
+      <!-- Cast Module Quiz -->
+      <div class="quiz-card mt-6 p-5" id="quiz-cast">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="inline-flex items-center gap-1 bg-[color:var(--brand-darker)] text-white text-[0.65rem] font-extrabold uppercase tracking-widest px-2 py-0.5">Quiz</span>
+          <span class="text-[0.7rem] font-bold uppercase tracking-wider text-[color:var(--gray)]">Module · Cast Film &amp; Rivet Protocols</span>
+        </div>
+        <h3 class="quiz-q mb-4">When applying Cast film over rivets, what are the preheat and post-heat temperatures?</h3>
+        <div class="space-y-2" data-correct="c">
+          <label class="quiz-opt"><input type="radio" name="qcast" value="a"><span>A. Preheat 20°C; Post-heat 50°C</span></label>
+          <label class="quiz-opt"><input type="radio" name="qcast" value="b"><span>B. Preheat 100°C; Post-heat 150°C</span></label>
+          <label class="quiz-opt"><input type="radio" name="qcast" value="c"><span>C. Gently preheat to 40°C–50°C; Post-heat each rivet to 80°C–90°C</span></label>
+        </div>
+        <div class="mt-3 hidden result-msg" id="res-qcast"></div>
+        <button onclick="checkQuizDirect('qcast','res-qcast','quiz-cast')" class="mt-4 px-4 py-2 bg-[color:var(--brand)] text-white text-[0.78rem] font-extrabold uppercase tracking-widest hover:bg-[color:var(--brand-dk)] transition">Check answer</button>
+      </div>
+
+    </section>
+
+    <!-- ===================================================================
+         PART 4: 13-STAGE SHOP OPERATION MANUAL (VERBATIM SHOP WORKFLOW)
+         =================================================================== -->
+    <section id="manual-13" data-title="13-Stage Shop Manual" class="scroll-mt-24">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="tip-badge">Part IV · Standardized Hands-On Workflow</span>
+        <span class="text-[0.75rem] font-bold uppercase tracking-[.18em] text-[color:var(--gray)]">Shop Floor Execution</span>
+      </div>
+      <h2 class="sec-title"><span class="sq"></span><span class="txt">13-Stage Operation Manual</span></h2>
+      <p class="mt-3 text-[1rem] leading-relaxed text-[#46514A]">
+        This section preserves the complete, verified, standardized hands-on workshop operations step-by-step — from vehicle intake and deep clay wash to protective film removal, trimming, and customer handover.
+      </p>
+
+      <!-- Stage 1: Abstract -->
+      <div class="mt-8 pt-6 border-t border-[color:var(--line)]" id="man-abstract">
+        <h3 class="brandlogo text-[1.4rem] uppercase text-[color:var(--ink)] flex items-center gap-2">
+          <span class="sq" style="width:.5em;height:.5em;background:var(--brand)"></span>1. Abstract
+        </h3>
+        <p class="mt-2 text-[0.95rem] leading-[1.75] text-[#3B453E]">
+          Car wrapping is a process that has high requirements for techniques and procedures. Standardized operations can not only ensure the aesthetics and durability of the film application effectives, but also avoid damage to the vehicle. This instruction manual is suitable for the application of various types of automotive film.
+        </p>
+      </div>
+
+      <!-- Stage 2: Preparation -->
+      <div class="mt-8 pt-6 border-t border-[color:var(--line)]" id="man-prep">
+        <h3 class="brandlogo text-[1.4rem] uppercase text-[color:var(--ink)] flex items-center gap-2">
+          <span class="sq" style="width:.5em;height:.5em;background:var(--brand)"></span>2. Preparation
+        </h3>
+        <p class="mt-2 text-[0.95rem] text-[#3B453E]">
+          Adequate preparation is the foundation for ensuring the smooth progress of the film application. The specific details are as follows:
+        </p>
+        <div class="mt-4 grid sm:grid-cols-2 gap-3.5">
+          <div class="card card-accent">
+            <h4 class="font-extrabold text-[0.95rem] uppercase text-[color:var(--ink)]">Environment preparation</h4>
+            <p class="mt-1 text-[0.88rem] text-[#46514A]">Confirm that the wrap shop is clean, dust-free and well-lit. Maintain the temperature at <strong>15–25°C</strong> and avoid wrapping in windy, humid or high-temperature environment.</p>
+          </div>
+          <div class="card card-accent">
+            <h4 class="font-extrabold text-[0.95rem] uppercase text-[color:var(--ink)]">Vehicle Pre-inspection</h4>
+            <p class="mt-1 text-[0.88rem] text-[#46514A]">Check the vehicle condition together with the customer. Record paint defects, scratches, etc., and take photos for fixing to avoid subsequent disputes.</p>
+          </div>
+          <div class="card card-accent">
+            <h4 class="font-extrabold text-[0.95rem] uppercase text-[color:var(--ink)]">Tool Preparation &amp; Display</h4>
+            <p class="mt-1 text-[0.88rem] text-[#46514A]">Prepare all tools required for car wrapping, including scrapers, film-cutting knives, spray bottles, heat guns, masking tape, masking film, microfiber towels, etc.</p>
+          </div>
+          <div class="card card-accent">
+            <h4 class="font-extrabold text-[0.95rem] uppercase text-[color:var(--ink)]">Material Preparation</h4>
+            <p class="mt-1 text-[0.88rem] text-[#46514A]">Verify the item code and color of the film. Check the film for quality issues such as air bubbles, scratches, color differences, etc.</p>
+          </div>
+        </div>
+
+        <div class="mt-4 grid grid-cols-3 sm:grid-cols-6 gap-2">
+          <div class="tool"><span class="i">🧤</span>Gloves</div><div class="tool"><span class="i">🔪</span>Cut knife</div><div class="tool"><span class="i">🧴</span>Spray bottle</div>
+          <div class="tool"><span class="i">🔥</span>Heat gun</div><div class="tool"><span class="i">🪵</span>Squeegee</div><div class="tool"><span class="i">🩹</span>Masking tape</div>
+        </div>
+      </div>
+
+      <!-- Stage 3 & 4: Vehicle Clean & Drying (Rich Photo 4-Pack) -->
+      <div class="mt-8 pt-6 border-t border-[color:var(--line)]" id="man-clean">
+        <h3 class="brandlogo text-[1.4rem] uppercase text-[color:var(--ink)] flex items-center gap-2">
+          <span class="sq" style="width:.5em;height:.5em;background:var(--brand)"></span>3 &amp; 4. Vehicle Clean &amp; Drying
+        </h3>
+        <p class="mt-2 text-[0.95rem] text-[#3B453E]">
+          Cleaning is crucial to ensure the quality of car wrapping, and the surface to be filmed must be absolutely clean. The specific steps are as follows:
+        </p>
+        <div class="mt-4 grid md:grid-cols-3 gap-3.5">
+          <div class="step"><div class="no">1</div><p class="text-[0.9rem] text-[#46514A]">Rinse the vehicle surface with a high-pressure water gun to remove loose dust and large particle impurities.</p></div>
+          <div class="step"><div class="no">2</div><p class="text-[0.9rem] text-[#46514A]">Spray foam cleaner and wipe the vehicle body with a soft sponge or car wash mitt, focusing on cleaning seams, edges and tight areas.</p></div>
+          <div class="step"><div class="no">3</div><p class="text-[0.9rem] text-[#46514A]">Rinse off the foam with clean water, then use a dedicated clay bar to remove stubborn stains such as iron deposits and tar from the paint surface.</p></div>
+        </div>
+
+        <!-- 4 Photographic Proof Panels (Option B richness) -->
+        <div class="mt-5 grid grid-cols-2 md:grid-cols-4 gap-3">
+          <figure class="figure aspect-square">
+            <span class="figure-badge">Step 1: Foam Soak</span>
+            <img src="https://images.pexels.com/photos/4870739/pexels-photo-4870739.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Car covered in foam wash" loading="lazy">
+            <figcaption>Loosening surface particles</figcaption>
+          </figure>
+          <figure class="figure aspect-square">
+            <span class="figure-badge">Step 2: Seam Wash</span>
+            <img src="https://images.pexels.com/photos/4870699/pexels-photo-4870699.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Washing car grille with sponge" loading="lazy">
+            <figcaption>Cleaning tight seams &amp; grilles</figcaption>
+          </figure>
+          <figure class="figure aspect-square">
+            <span class="figure-badge">Step 3: Headlights</span>
+            <img src="https://images.pexels.com/photos/4870702/pexels-photo-4870702.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Cleaning headlight seams" loading="lazy">
+            <figcaption>Tar &amp; contaminant removal</figcaption>
+          </figure>
+          <figure class="figure aspect-square">
+            <span class="figure-badge">Step 4: Microfiber</span>
+            <img src="https://images.pexels.com/photos/7154634/pexels-photo-7154634.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Drying car with clean microfiber towel" loading="lazy">
+            <figcaption>Drying to prevent water spots</figcaption>
+          </figure>
+        </div>
+
+        <div class="callout mt-4 p-4 pl-7">
+          <div class="ctitle text-[1.15rem]">Key point: Drying &amp; Moisture Evaporation</div>
+          <ul class="mt-2 space-y-1.5 text-[0.9rem] text-white/95">
+            <li>• Thoroughly dry the vehicle body with a clean microfiber towel, taking care to avoid leaving water spots.</li>
+            <li>• After washing, allow the vehicle to air dry in the sun for <strong>30 minutes</strong>. Alternatively, use an air blower to remove residual water droplets from seams and hard-to-reach areas.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Stage 5: Surface Dust & Contaminant Removal -->
+      <div class="mt-8 pt-6 border-t border-[color:var(--line)]" id="man-dust">
+        <h3 class="brandlogo text-[1.4rem] uppercase text-[color:var(--ink)] flex items-center gap-2">
+          <span class="sq" style="width:.5em;height:.5em;background:var(--brand)"></span>5. Surface Dust and Contaminant Removal
+        </h3>
+        <div class="mt-3 space-y-2 text-[0.92rem] text-[#46514A]">
+          <div class="kv"><span class="dot"></span><p>Use a high-pressure air gun to blow off dust and particles from the film surface and the back of release liner.</p></div>
+          <div class="kv"><span class="dot"></span><p>Avoid peeling off the adhesive protective film of the material during the cleaning process.</p></div>
+          <div class="kv"><span class="dot"></span><p>If the edge of the film's protective layer lifts, gently secure it with masking tape.</p></div>
+        </div>
+      </div>
+
+      <!-- Stage 6: Removal & Protection of Accessories -->
+      <div class="mt-8 pt-6 border-t border-[color:var(--line)]" id="man-acc">
+        <h3 class="brandlogo text-[1.4rem] uppercase text-[color:var(--ink)] flex items-center gap-2">
+          <span class="sq" style="width:.5em;height:.5em;background:var(--brand)"></span>6. Removal &amp; Protection of Accessories
+        </h3>
+        <p class="mt-2 text-[0.92rem] text-[#46514A]">To protect non-wrapping areas from damage and create an unobstructed environment for film application, the following operations are required:</p>
+        <div class="mt-3 grid sm:grid-cols-2 gap-3.5">
+          <div class="card card-accent">
+            <h4 class="font-extrabold text-[0.95rem] uppercase text-[color:var(--ink)]">Protection</h4>
+            <p class="mt-1 text-[0.88rem] text-[#46514A]">Use masking tape and masking film to tightly protect non-wrapping areas such as headlights, taillights, painted parts, chrome trim kits, and glass edges. Ensure the edges fit tightly with no unprotected areas left.</p>
+          </div>
+          <div class="card card-accent">
+            <h4 class="font-extrabold text-[0.95rem] uppercase text-[color:var(--ink)]">Removal of Accessories</h4>
+            <p class="mt-1 text-[0.88rem] text-[#46514A]">Dismantle parts that may hinder car wrapping, including large and small body emblems, door handles, and antennas. Before removal, confirm the type of fasteners, use dedicated tools to avoid damage caused by brute force, and properly store the removed parts.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage 7: Measurement & Film Cutting -->
+      <div class="mt-8 pt-6 border-t border-[color:var(--line)]" id="man-cut">
+        <h3 class="brandlogo text-[1.4rem] uppercase text-[color:var(--ink)] flex items-center gap-2">
+          <span class="sq" style="width:.5em;height:.5em;background:var(--brand)"></span>7. Measurement &amp; Film Cutting
+        </h3>
+        <p class="mt-2 text-[0.92rem] text-[#46514A]">Accurate measurement and cutting lay the foundation for subsequent wrapping. The specific methods are as follows:</p>
+        <div class="mt-3 space-y-2">
+          <div class="step"><div class="no dark">1</div><p class="text-[0.9rem] text-[#46514A]">Use a tape measure to accurately measure the dimensions of the area to be filmed, and perform cutting on a clean film-cutting table.</p></div>
+          <div class="step"><div class="no dark">2</div><p class="text-[0.9rem] text-[#46514A]">When cutting the film, the size of the film should be <strong>5–10mm larger</strong> than the actual coverage area to leave a margin for edge wrapping.</p></div>
+          <div class="step"><div class="no dark">3</div><p class="text-[0.9rem] text-[#46514A]">Use a professional film-cutting knife and a straightedge to ensure the cut is flat and smooth, avoiding burrs or cutting deviations.</p></div>
+        </div>
+
+        <div class="mt-5 grid md:grid-cols-2 gap-4">
+          <div class="card">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="tip-badge-green">Hood Wrapping</span>
+              <span class="text-[0.72rem] font-bold uppercase text-[color:var(--gray)]">Center-Line Method</span>
+            </div>
+            <p class="text-[0.88rem] leading-relaxed text-[#46514A]">
+              • Locate the center line of the hood, and use a professional film-cutting knife or low-tack tape to score a center line mark on the film's backing paper.<br>
+              • Perform the application separately on the left and right sides. First peel off a small section of backing paper, align it with the center line and fix it in place.<br>
+              • Then slowly peel off the remaining backing paper, using a squeegee to smooth out the film at the same time, avoiding adhesion or misalignment.
+            </p>
+          </div>
+          <div class="card">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="tip-badge">Side Panel Application</span>
+              <span class="text-[0.72rem] font-bold uppercase text-[color:var(--gray)]">Single vs Multi-Person</span>
+            </div>
+            <p class="text-[0.88rem] leading-relaxed text-[#46514A]">
+              <strong>Single-Person:</strong> Position film using front or rear bumper as reference point. Partially remove liner, adhere a small section, secure remainder with magnetic positioning pins, and proceed front-to-rear or vice versa.<br>
+              <strong>Multi-Person:</strong> Completely remove release liner. Stretch film evenly across vehicle contours for positioning (pre-mark with positioning tape). Once positioned, squeegee from panel center outward to edges.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage 8: Heat Stretching & Molding -->
+      <div class="mt-8 pt-6 border-t border-[color:var(--line)]" id="man-heat">
+        <h3 class="brandlogo text-[1.4rem] uppercase text-[color:var(--ink)] flex items-center gap-2">
+          <span class="sq" style="width:.5em;height:.5em;background:var(--brand)"></span>8. Heat Stretching and Molding
+        </h3>
+        <p class="mt-2 text-[0.92rem] text-[#46514A]">Heat the film and stretch it to ensure it perfectly fits the complex curved surfaces of the vehicle body. Key points:</p>
+        <div class="mt-3 space-y-2 text-[0.92rem] text-[#46514A]">
+          <div class="kv"><span class="dot"></span><p>Use a heat gun together with a squeegee. Set an appropriate heat gun temperature based on the PVC film material.</p></div>
+          <div class="kv"><span class="dot"></span><p>When heating, move the heat gun at a constant speed, keeping it <strong>10–15cm away</strong> from the film surface. After heating, let it cool for a few seconds.</p></div>
+          <div class="kv"><span class="dot"></span><p>Use your palm or a squeegee to press the film, ensuring it closely adheres to the curved surface of the vehicle body.</p></div>
+          <div class="kv"><span class="dot"></span><p>Note that excessively high temperature or prolonged heating will cause the film to deform, char, or damage the vehicle's paint finish.</p></div>
+        </div>
+      </div>
+
+      <!-- Stage 9: Squeegee the Film -->
+      <div class="mt-8 pt-6 border-t border-[color:var(--line)]" id="man-squeegee">
+        <h3 class="brandlogo text-[1.4rem] uppercase text-[color:var(--ink)] flex items-center gap-2">
+          <span class="sq" style="width:.5em;height:.5em;background:var(--brand)"></span>9. Squeegee the Film
+        </h3>
+        <p class="mt-2 text-[0.92rem] text-[#46514A]">The purpose of squeegeeing the film is to completely expel moisture and air bubbles between the film and the paint surface:</p>
+        <div class="mt-3 space-y-2 text-[0.92rem] text-[#46514A]">
+          <div class="kv"><span class="dot"></span><p>While slowly peeling off the backing paper, use a squeegee to smooth the film, working sequentially from the center to the sides.</p></div>
+          <div class="kv"><span class="dot"></span><p>Keep the squeegee at an approximately <strong>30-degree angle</strong> to the film surface, maintaining even and steady pressure to avoid wrinkles, air bubbles, or film adhesion.</p></div>
+          <div class="kv"><span class="dot"></span><p>For larger film pieces, we recommend two people to cooperate: one person peels off the backing paper, and the other squeegees the film.</p></div>
+        </div>
+      </div>
+
+      <!-- Stage 10: Film Inspection & Edge Trimming -->
+      <div class="mt-8 pt-6 border-t border-[color:var(--line)]" id="man-inspect">
+        <h3 class="brandlogo text-[1.4rem] uppercase text-[color:var(--ink)] flex items-center gap-2">
+          <span class="sq" style="width:.5em;height:.5em;background:var(--brand)"></span>10. Film Inspection &amp; Trim off Edges
+        </h3>
+        <p class="mt-2 text-[0.92rem] text-[#46514A]">Before edge finishing and securing, carefully inspect the film surface:</p>
+        <div class="mt-3 grid sm:grid-cols-3 gap-3">
+          <div class="card card-accent"><div class="tip-badge mb-1">01 · Under Sufficient Light</div><p class="text-[0.88rem] text-[#46514A]">Check the film surface for defects such as air bubbles, water bubbles, dirt spots, and scratches.</p></div>
+          <div class="card card-accent"><div class="tip-badge mb-1">02 · Small Air Bubbles</div><p class="text-[0.88rem] text-[#46514A]">Resolve them by pricking to release air or re-squeegee the film.</p></div>
+          <div class="card card-accent"><div class="tip-badge mb-1">03 · Dirt Spots</div><p class="text-[0.88rem] text-[#46514A]">If location allows, lift film edge and use dedicated cleaning solution with tape to stick out impurities. If defects cannot be repaired, replace with new film without hesitation.</p></div>
+        </div>
+
+        <div class="note p-4 mt-4">
+          <span class="tip-badge mb-1">Trim off Edges</span>
+          <p class="mt-1 text-[0.9rem] text-[#46514A]">
+            Trim off the excess film edges to ensure they fit perfectly with vehicle body lines. Perform edge trimming only after confirming film is fully adhered, shaped, and all water squeezed out. Use a new, sharp utility knife to cut along vehicle body gaps or protective tape edges. Leave a <strong>2–3mm margin</strong> for edge wrapping, ensuring trimmed edges are neat and smooth.
+          </p>
+        </div>
+      </div>
+
+      <!-- Stage 11: Peel off Protective Film & Finish Edges -->
+      <div class="mt-8 pt-6 border-t border-[color:var(--line)]" id="man-peel">
+        <h3 class="brandlogo text-[1.4rem] uppercase text-[color:var(--ink)] flex items-center gap-2">
+          <span class="sq" style="width:.5em;height:.5em;background:var(--brand)"></span>11. Peel off Protective Film &amp; Finish Edges
+        </h3>
+        <div class="callout mt-3 p-4 pl-7">
+          <p class="text-[0.92rem] text-white/95">
+            <strong>Peel off Protective Film:</strong> Before edge finishing, peel off the scratch-resistant protective film from the material surface to facilitate easier adhesion during edge finishing.
+          </p>
+        </div>
+        <div class="mt-4 card card-accent">
+          <h4 class="font-extrabold text-[0.98rem] uppercase text-[color:var(--ink)]">Finish Edges</h4>
+          <p class="mt-1 text-[0.9rem] text-[#46514A]">
+            Push the reserved edge-wrapping film into the gaps to prevent edge lifting and ensure long-term stability:
+          </p>
+          <ul class="mt-2 space-y-1.5 text-[0.88rem] text-[#46514A]">
+            <li>• Use a small squeegee or dedicated edge-finishing tool to heat the film edge and soften it.</li>
+            <li>• Gently push the softened film edge into the gap with the tool.</li>
+            <li>• Keep movements gentle to avoid damaging the vehicle paint or weatherstripping.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Stage 12: Reinstall All Removed Accessories -->
+      <div class="mt-8 pt-6 border-t border-[color:var(--line)]" id="man-reinstall">
+        <h3 class="brandlogo text-[1.4rem] uppercase text-[color:var(--ink)] flex items-center gap-2">
+          <span class="sq" style="width:.5em;height:.5em;background:var(--brand)"></span>12. Reinstall All Removed Accessories
+        </h3>
+        <p class="mt-2 text-[0.92rem] text-[#46514A]">After wrapping is completed, perform the part reset operation:</p>
+        <div class="mt-3 grid sm:grid-cols-2 gap-3.5">
+          <div class="card">
+            <strong class="text-[color:var(--ink)]">Remove Masking:</strong> Carefully peel off masking tape and masking film that protected headlights, painted parts, chrome trim kits, and avoid leaving adhesive residue.
+          </div>
+          <div class="card">
+            <strong class="text-[color:var(--ink)]">Reinstall Accessories:</strong> Reinstall removed accessories such as emblems and door handles, ensuring they are securely installed, correctly positioned, and consistent with original vehicle appearance.
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage 13: Final Inspection & Notice -->
+      <div class="mt-8 pt-6 border-t border-[color:var(--line)]" id="man-final">
+        <h3 class="brandlogo text-[1.4rem] uppercase text-[color:var(--ink)] flex items-center gap-2">
+          <span class="sq" style="width:.5em;height:.5em;background:var(--brand)"></span>13. Inspection &amp; Notice
+        </h3>
+        <p class="mt-2 text-[0.92rem] text-[#46514A]">Conduct a final comprehensive inspection to ensure wrapping quality:</p>
+        <div class="mt-3 grid sm:grid-cols-2 gap-3 text-[0.9rem] text-[#354038]">
+          <div class="flex items-start gap-2"><span class="text-[color:var(--brand)] font-bold">✔</span> Check for color gaps and exposed paint on seams or edges.</div>
+          <div class="flex items-start gap-2"><span class="text-[color:var(--brand)] font-bold">✔</span> Inspect the film surface for dirt spots and unexpelled air bubbles.</div>
+          <div class="flex items-start gap-2"><span class="text-[color:var(--brand)] font-bold">✔</span> Confirm all edges are smooth, secure, and free from lifting.</div>
+          <div class="flex items-start gap-2"><span class="text-[color:var(--brand)] font-bold">✔</span> Verify that all accessories are properly and securely installed.</div>
+        </div>
+
+        <div class="callout mt-4 p-4 pl-7">
+          <div class="ctitle text-[1.1rem]">Customer Handover: Washing Rules</div>
+          <p class="mt-1.5 text-[0.9rem] text-white/95">
+            Do not wash the vehicle within <strong>one week</strong> after film application, and avoid direct high-pressure water spray on the film edges.
+          </p>
+        </div>
+
+        <div class="callout-dark mt-4 p-5 pl-8 rounded-2px">
+          <div class="text-[0.72rem] font-extrabold uppercase tracking-widest text-[color:var(--brand)] mb-1">SAFETY &amp; OPERATOR NOTICE</div>
+          <p class="text-[0.94rem] leading-relaxed text-white/95">
+            During the car wrapping process, pay attention to protecting the vehicle to avoid scratching the paint surface or damaging parts with tools. Operators must wear gloves to prevent hangnails from being left on the film or paint surface. For films of different materials, parameters such as construction temperature and stretching force vary. Strictly follow the film's product instructions for operation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         PART 5: MASTER COMPREHENSION QUIZ (SMART TESTING ENGINE)
+         =================================================================== -->
+    <section id="quiz-section" data-title="Master Comprehension Quiz" class="scroll-mt-24">
+      <div class="flex items-center gap-2 mb-2">
+        <span class="tip-badge-green">Knowledge Certification</span>
+        <span class="text-[0.75rem] font-bold uppercase tracking-[.18em] text-[color:var(--gray)]">All 4 Technical Sections</span>
+      </div>
+      <h2 class="sec-title"><span class="sq"></span><span class="txt">Master Comprehension Quiz</span></h2>
+      <p class="mt-3 text-[1rem] leading-relaxed text-[#46514A]">
+        Test your understanding across the Quick Reference Guide, the Polymeric Series, the Cast Film Series, and the 13-Step Manual. Answer all 5 master questions to earn 100% quiz mastery.
+      </p>
+
+      <div class="mt-6 space-y-5">
+
+        <!-- Q1: Film Selection -->
+        <div class="quiz-card p-5" id="mq-1">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tip-badge-green text-[0.65rem] px-2 py-0.5">Q1 · Film Selection</span>
+            <span class="text-[0.72rem] font-bold text-[color:var(--gray)]">Quick Reference</span>
+          </div>
+          <h3 class="quiz-q mb-3">Which film type is recommended for deep recesses, rivets, compound curves, and long-term full wraps?</h3>
+          <div class="space-y-2" data-correct="b">
+            <label class="quiz-opt"><input type="radio" name="mq1" value="a"><span>A. Monomeric Calendered Vinyl</span></label>
+            <label class="quiz-opt"><input type="radio" name="mq1" value="b"><span>B. Cast Vinyl Film</span></label>
+            <label class="quiz-opt"><input type="radio" name="mq1" value="c"><span>C. Polymeric Semi-Curve Vinyl</span></label>
+          </div>
+          <div class="mt-3 hidden result-msg" id="res-mq1"></div>
+          <button onclick="checkQuizDirect('mq1','res-mq1','mq-1')" class="mt-3 px-4 py-2 bg-[color:var(--brand)] text-white text-[0.76rem] font-extrabold uppercase tracking-wider hover:bg-[color:var(--brand-dk)] transition">Submit Answer</button>
+        </div>
+
+        <!-- Q2: Post-Heat Temp -->
+        <div class="quiz-card p-5" id="mq-2">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tip-badge-green text-[0.65rem] px-2 py-0.5">Q2 · Temperature Calibration</span>
+            <span class="text-[0.72rem] font-bold text-[color:var(--gray)]">Post-Heating Standard</span>
+          </div>
+          <h3 class="quiz-q mb-3">What temperature range must be reached during post-heating to eliminate vinyl shape memory and prevent lifting?</h3>
+          <div class="space-y-2" data-correct="c">
+            <label class="quiz-opt"><input type="radio" name="mq2" value="a"><span>A. 40°C – 50°C</span></label>
+            <label class="quiz-opt"><input type="radio" name="mq2" value="b"><span>B. 60°C – 70°C</span></label>
+            <label class="quiz-opt"><input type="radio" name="mq2" value="c"><span>C. 90°C – 110°C (verified with a laser thermometer)</span></label>
+          </div>
+          <div class="mt-3 hidden result-msg" id="res-mq2"></div>
+          <button onclick="checkQuizDirect('mq2','res-mq2','mq-2')" class="mt-3 px-4 py-2 bg-[color:var(--brand)] text-white text-[0.76rem] font-extrabold uppercase tracking-wider hover:bg-[color:var(--brand-dk)] transition">Submit Answer</button>
+        </div>
+
+        <!-- Q3: Rivets Protocol -->
+        <div class="quiz-card p-5" id="mq-3">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tip-badge-green text-[0.65rem] px-2 py-0.5">Q3 · Commercial Fleet Details</span>
+            <span class="text-[0.72rem] font-bold text-[color:var(--gray)]">Cast Series Rivet Application</span>
+          </div>
+          <h3 class="quiz-q mb-3">When installing Cast film over rivets on a truck body, what is the correct preheat &amp; post-heat procedure?</h3>
+          <div class="space-y-2" data-correct="a">
+            <label class="quiz-opt"><input type="radio" name="mq3" value="a"><span>A. Gently preheat to 40°C–50°C, apply full pressure around the rivet, then post-heat each rivet to 80°C–90°C</span></label>
+            <label class="quiz-opt"><input type="radio" name="mq3" value="b"><span>B. Cut a slit over the rivet and stretch the cold film flat</span></label>
+            <label class="quiz-opt"><input type="radio" name="mq3" value="c"><span>C. Heat directly to 130°C until the vinyl melts over the fastener</span></label>
+          </div>
+          <div class="mt-3 hidden result-msg" id="res-mq3"></div>
+          <button onclick="checkQuizDirect('mq3','res-mq3','mq-3')" class="mt-3 px-4 py-2 bg-[color:var(--brand)] text-white text-[0.76rem] font-extrabold uppercase tracking-wider hover:bg-[color:var(--brand-dk)] transition">Submit Answer</button>
+        </div>
+
+        <!-- Q4: Paint Curing -->
+        <div class="quiz-card p-5" id="mq-4">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tip-badge-green text-[0.65rem] px-2 py-0.5">Q4 · Substrate Preparation</span>
+            <span class="text-[0.72rem] font-bold text-[color:var(--gray)]">Pre-Installation Checks</span>
+          </div>
+          <h3 class="quiz-q mb-3">What is the minimum curing time for freshly painted vehicles before wrapping?</h3>
+          <div class="space-y-2" data-correct="b">
+            <label class="quiz-opt"><input type="radio" name="mq4" value="a"><span>A. 24 hours</span></label>
+            <label class="quiz-opt"><input type="radio" name="mq4" value="b"><span>B. Minimum 7 days at 25°C (up to one month for air-dried paint)</span></label>
+            <label class="quiz-opt"><input type="radio" name="mq4" value="c"><span>C. 3 hours under infrared lamp</span></label>
+          </div>
+          <div class="mt-3 hidden result-msg" id="res-mq4"></div>
+          <button onclick="checkQuizDirect('mq4','res-mq4','mq-4')" class="mt-3 px-4 py-2 bg-[color:var(--brand)] text-white text-[0.76rem] font-extrabold uppercase tracking-wider hover:bg-[color:var(--brand-dk)] transition">Submit Answer</button>
+        </div>
+
+        <!-- Q5: Vinyl Removal -->
+        <div class="quiz-card p-5" id="mq-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="tip-badge-green text-[0.65rem] px-2 py-0.5">Q5 · De-Identification &amp; Removal</span>
+            <span class="text-[0.72rem] font-bold text-[color:var(--gray)]">Substrate Protection</span>
+          </div>
+          <h3 class="quiz-q mb-3">What is the professional removal protocol to protect paint and prevent adhesive residue?</h3>
+          <div class="space-y-2" data-correct="b">
+            <label class="quiz-opt"><input type="radio" name="mq5" value="a"><span>A. Pull rapidly cold at a 180° angle</span></label>
+            <label class="quiz-opt"><input type="radio" name="mq5" value="b"><span>B. Heat to approximately 60°C and peel slowly at a 70°–80° angle</span></label>
+            <label class="quiz-opt"><input type="radio" name="mq5" value="c"><span>C. Scrape off dry using metal razor blades</span></label>
+          </div>
+          <div class="mt-3 hidden result-msg" id="res-mq5"></div>
+          <button onclick="checkQuizDirect('mq5','res-mq5','mq-5')" class="mt-3 px-4 py-2 bg-[color:var(--brand)] text-white text-[0.76rem] font-extrabold uppercase tracking-wider hover:bg-[color:var(--brand-dk)] transition">Submit Answer</button>
+        </div>
+
+      </div>
+
+      <!-- Quiz Summary Card -->
+      <div class="mt-8 bg-[color:var(--ink)] text-white rounded-3px p-6 md:p-8">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <div class="text-[0.72rem] font-extrabold uppercase tracking-widest text-[color:var(--brand)]">TRAINING CERTIFICATION SCORE</div>
+            <div class="flex items-baseline gap-3 mt-1">
+              <span id="finalScore" class="font-black text-4xl sm:text-5xl text-white">0 / 7</span>
+              <span class="text-white/60 text-sm">questions completed correctly across all modules</span>
+            </div>
+          </div>
+          <button onclick="resetAll()" class="px-4 py-2.5 bg-white/10 hover:bg-white/20 text-[0.76rem] font-extrabold uppercase tracking-wider text-white transition rounded-1px">Reset All Quizzes</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         PART 6: SIGN-OFF & SHOP QA CHECKLIST
+         =================================================================== -->
+    <section id="signoff" data-title="QA &amp; Sign-Off Record" class="scroll-mt-24">
+      <div class="border border-[color:var(--line)] bg-white rounded-2px overflow-hidden shadow-sm">
+        <div class="checker"></div>
+        <div class="p-6 md:p-8 grid md:grid-cols-12 gap-6">
+          <div class="md:col-span-8">
+            <span class="tip-badge-green mb-1">QA Record &amp; Warranty Verification</span>
+            <h3 class="brandlogo text-[1.6rem] uppercase text-[color:var(--ink)] mt-1">Installation Completion Record</h3>
+            <p class="text-[0.92rem] leading-relaxed text-[#46514A] mt-2">
+              Sign off each vehicle wrap with the installer's name, the film batch, roll number, and installation date. Tick each verified checklist checkpoint to guarantee warranty compliance.
+            </p>
+
+            <div class="mt-5 space-y-2">
+              <label class="chk"><input type="checkbox" data-step="c1"><span class="lbl">Pre-inspection: Scratches &amp; paint defects recorded with customer and photographed.</span></label>
+              <label class="chk"><input type="checkbox" data-step="c2"><span class="lbl">Cleaning: High-pressure wash, foam soak, clay-bar contaminant removal completed.</span></label>
+              <label class="chk"><input type="checkbox" data-step="c3"><span class="lbl">Drying: Clean microfiber dried, 30-min sun dry, seams air-blown.</span></label>
+              <label class="chk"><input type="checkbox" data-step="c4"><span class="lbl">Protection: Lights, chrome, glass edges masked; accessories dismantled with dedicated tools.</span></label>
+              <label class="chk"><input type="checkbox" data-step="c5"><span class="lbl">Cutting: Measured accurately, cut 5–10mm larger than panel on clean cutting table.</span></label>
+              <label class="chk"><input type="checkbox" data-step="c6"><span class="lbl">Application: 30° squeegee angle, center-to-edge passes; tension managed without overstretching.</span></label>
+              <label class="chk"><input type="checkbox" data-step="c7"><span class="lbl">Post-Heating: All stretched areas reheated to 90°C–110°C (verified by laser thermometer).</span></label>
+              <label class="chk"><input type="checkbox" data-step="c8"><span class="lbl">Rivets (if applicable): Preheated to 40–50°C, sealed 360°, post-heated to 80–90°C.</span></label>
+              <label class="chk"><input type="checkbox" data-step="c9"><span class="lbl">Edge Finishing: 2–3mm margin neatly trimmed, edges heated &amp; tucked into panel gaps.</span></label>
+              <label class="chk"><input type="checkbox" data-step="c10"><span class="lbl">Accessories: Reinstalled securely, correctly positioned, and functioning.</span></label>
+              <label class="chk"><input type="checkbox" data-step="c11"><span class="lbl">Customer Handover: Advised 24–48h cure and no washing for 1 week.</span></label>
+            </div>
+
+            <div class="mt-6 grid sm:grid-cols-3 gap-4 pt-4 border-t border-[color:var(--line)]">
+              <div>
+                <div class="text-[0.66rem] font-bold uppercase tracking-wider text-[color:var(--gray)]">Certified Installer</div>
+                <div class="mt-1 h-8 border-b border-dashed border-[#B8CEBF]"></div>
+              </div>
+              <div>
+                <div class="text-[0.66rem] font-bold uppercase tracking-wider text-[color:var(--gray)]">Film Batch / Roll Number</div>
+                <div class="mt-1 h-8 border-b border-dashed border-[#B8CEBF]"></div>
+              </div>
+              <div>
+                <div class="text-[0.66rem] font-bold uppercase tracking-wider text-[color:var(--gray)]">Installation Date</div>
+                <div class="mt-1 h-8 border-b border-dashed border-[#B8CEBF]"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:col-span-4 bg-[color:var(--cream)] p-5 rounded-2px flex flex-col justify-between border border-[#C5D8CB]">
+            <div>
+              <div class="brandlogo text-[1.1rem] uppercase text-[color:var(--ink)]">Installation Status</div>
+              <div class="mt-3 flex items-baseline gap-3">
+                <div id="bigpct" class="brandlogo text-[3.2rem] leading-none text-[color:var(--brand)]">0%</div>
+                <div id="bigcount" class="text-[0.82rem] font-bold text-[color:var(--gray)]">0 / 11 signed</div>
+              </div>
+              <div class="h-2.5 bg-white border border-[color:var(--line)] mt-3 overflow-hidden rounded-full">
+                <div id="bigbar" class="h-full w-0 bg-[color:var(--brand)] transition-all"></div>
+              </div>
+              <p class="text-[0.8rem] leading-relaxed text-[#59635C] mt-4">
+                Checkpoints are stored locally in your browser. You can return at any time to resume verification or print this certificate.
+              </p>
+            </div>
+            <button onclick="window.print()" class="mt-6 w-full py-3 bg-[color:var(--ink)] text-white text-[0.78rem] font-extrabold uppercase tracking-wider hover:bg-[color:var(--brand)] transition">
+              Print Signed Record
+            </button>
+          </div>
+        </div>
+        <div class="hazard h-[6px]"></div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-[color:var(--ink)] text-white">
+  <div class="max-w-[1360px] mx-auto px-4 sm:px-6 py-12 grid md:grid-cols-12 gap-8">
+    
+    <div class="md:col-span-5">
+      <!-- Official UNEDITED NOAF logo file on white chip -->
+      <span class="inline-block bg-white rounded-sm px-3.5 py-3 mb-4">
+        <img class="h-16 w-auto object-contain"
+             src="https://media.licdn.com/dms/image/v2/C4D0BAQGNu-vA1-0qXQ/company-logo_200_200/company-logo_200_200/0/1630551200380/noaf_advertising_llc_graphics_trading_division_logo?e=2147483647&v=beta&t=bKZmHxMqkBm0sfEwj52TPo7ZpLOxd4BrIEJb6Ax2m1s"
+             alt="NOAF Advertising LLC — Digital Wide Format Products"
+             onerror="noafLogoFail(this)">
+      </span>
+      <p class="text-[0.92rem] font-bold text-[color:var(--brand)] tracking-wider uppercase">Your Brand. In Motion.</p>
+      <p class="mt-2 text-[0.85rem] leading-relaxed text-white/65 max-w-[42ch]">
+        NOAF Advertising LLC is a mainstream supplier of advertising requisites in the U.A.E., supplying a wide range of digital wide format printing materials and machines.
+      </p>
+    </div>
+
+    <div class="md:col-span-4">
+      <div class="text-[0.7rem] font-bold uppercase tracking-[.18em] text-white/50 mb-3">Technical Sections</div>
+      <nav class="grid grid-cols-2 gap-1.5 text-[0.84rem] text-white/75" id="footNav"></nav>
+    </div>
+
+    <div class="md:col-span-3">
+      <div class="text-[0.7rem] font-bold uppercase tracking-[.18em] text-white/50 mb-3">Specification Sheet</div>
+      <ul class="space-y-1.5 text-[0.82rem] text-white/75">
+        <li>• Quick Reference: 8 Golden Rules</li>
+        <li>• Polymeric: Semi-Curve Vinyl Film</li>
+        <li>• Cast Series: Deep Recesses &amp; Rivets</li>
+        <li>• Standard Manual: 13 Shop Stages</li>
+        <li>• Post-Heat Standard: 90°C – 110°C</li>
+      </ul>
+      <button onclick="window.print()" class="mt-5 px-4 py-2.5 bg-[color:var(--brand)] text-white text-[0.74rem] font-extrabold uppercase tracking-[.14em] hover:bg-white hover:text-[color:var(--ink)] transition no-print">
+        Print Technical Guide
+      </button>
+    </div>
+
+  </div>
+  <div class="hazard h-[6px]"></div>
+  <div class="border-t border-white/10">
+    <div class="max-w-[1360px] mx-auto px-4 sm:px-6 py-4 text-[0.72rem] text-white/50 flex flex-wrap gap-x-4 gap-y-2 justify-between">
+      <span>© NOAF Advertising LLC — Digital Wide Format Products. All technical content and specifications compiled for vehicle wrap excellence.</span>
+      <span>Photography: Pexels · Auto Records, RDNE, Justin Agyarko, Matthew Hernandez</span>
+    </div>
+  </div>
+</footer>
+</main>
+
+<!-- Back to top button -->
+<button id="toTop" class="no-print fixed bottom-6 right-6 w-11 h-11 bg-[color:var(--brand)] text-white font-bold hidden items-center justify-center shadow-lg hover:bg-[color:var(--ink)] transition z-50 rounded-1px" aria-label="Back to top">↑</button>
+
+<script>
+/* ---------- Official UNEDITED NOAF logo failover chain ---------- */
+function noafLogoFail(img) {
+  const tries = [
+    'https://graph.facebook.com/NoafAdvertisingLLC/picture?width=720&height=720',
+    'https://graph.facebook.com/NoafDubai/picture?width=720&height=720'
+  ];
+  const n = Number(img.dataset.try || 0);
+  if (n < tries.length) {
+    img.dataset.try = String(n + 1);
+    img.src = tries[n];
+    return;
+  }
+  img.style.display = 'none';
+}
+
+/* ---------- Build TOC Dynamically from Sections ---------- */
+const sections = [...document.querySelectorAll('section[data-title]')];
+const tocNav = document.getElementById('tocNav');
+const footNav = document.getElementById('footNav');
+sections.forEach((s, i) => {
+  const a = document.createElement('a');
+  a.className = 'toc-link';
+  a.href = '#' + s.id;
+  a.dataset.target = s.id;
+  a.innerHTML = '<span class="n">' + String(i + 1).padStart(2, '0') + '</span><span>' + s.dataset.title + '</span>';
+  tocNav.appendChild(a);
+
+  const f = document.createElement('a');
+  f.href = '#' + s.id;
+  f.className = 'hover:text-[color:var(--brand)] transition block py-0.5';
+  f.textContent = s.dataset.title;
+  footNav.appendChild(f);
+});
+
+/* ---------- ScrollSpy ---------- */
+const links = [...document.querySelectorAll('.toc-link')];
+const spy = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(l => l.classList.toggle('active', l.dataset.target === e.target.id));
+    }
+  });
+}, { rootMargin: '-20% 0px -65% 0px', threshold: 0 });
+sections.forEach(s => spy.observe(s));
+
+/* ---------- Scroll Progress Bar & Back to Top ---------- */
+const bar = document.getElementById('progressbar');
+const toTop = document.getElementById('toTop');
+function onScroll() {
+  const h = document.documentElement;
+  const max = h.scrollHeight - h.clientHeight;
+  const p = max > 0 ? (h.scrollTop / max) * 100 : 0;
+  bar.style.width = p + '%';
+  toTop.classList.toggle('hidden', h.scrollTop < 600);
+  toTop.classList.toggle('flex', h.scrollTop >= 600);
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+/* ---------- TOC Search / Filter ---------- */
+document.getElementById('tocSearch').addEventListener('input', (e) => {
+  const q = e.target.value.trim().toLowerCase();
+  links.forEach(l => {
+    l.style.display = l.textContent.toLowerCase().includes(q) ? '' : 'none';
+  });
+});
+
+/* ---------- Film Decision Selector Tool ---------- */
+function pickFilm(type) {
+  document.querySelectorAll('.film-tab').forEach(t => t.classList.remove('border-[color:var(--brand)]', 'bg-[color:var(--brand-soft)]'));
+  const res = document.getElementById('filmResult');
+  if (type === 'flat') {
+    res.innerHTML = '<strong>Recommended: Polymeric Series (Semi-Curve Vinyl Film)</strong> — Ideal for flat panels, box vans, and straight sides. Highly stable, reliable adhesion, superior print clarity for medium-term fleet graphics.';
+  } else if (type === 'semi') {
+    res.innerHTML = '<strong>Recommended: Polymeric Series (Semi-Curve Vinyl Film)</strong> — Perfect for bonnets, roof crowns, and moderate contours. Work from flat sections towards curves with controlled heat.';
+  } else if (type === 'deep') {
+    res.innerHTML = '<strong>Recommended: Cast Vinyl Film</strong> — Essential for deep channels, recessed window lines, and complex vehicle curves. Exceptional conformability prevents tenting and lifting.';
+  } else if (type === 'rivets') {
+    res.innerHTML = '<strong>Recommended: Cast Vinyl Film Series</strong> — Specifically engineered for truck bodies with rivets and multi-directional curves. Preheat to 40°C–50°C, seal 360°, and post-heat each rivet to 80°C–90°C.';
+  }
+}
+
+/* ---------- Checklist Persistence via localStorage ---------- */
+const boxes = [...document.querySelectorAll('.chk input[type=checkbox]')];
+const KEY = 'noaf-master-checklist-v2';
+let checkState = {};
+try { checkState = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { checkState = {}; }
+boxes.forEach(b => { b.checked = !!checkState[b.dataset.step]; });
+
+function saveChecklist() {
+  const next = {};
+  boxes.forEach(b => { if (b.checked) next[b.dataset.step] = 1; });
+  try { localStorage.setItem(KEY, JSON.stringify(next)); } catch (e) {}
+}
+
+function paintChecklist() {
+  const total = boxes.length;
+  const done = boxes.filter(b => b.checked).length;
+  const pct = total ? Math.round((done / total) * 100) : 0;
+  const bigPct = document.getElementById('bigpct'); if (bigPct) bigPct.textContent = pct + '%';
+  const bigBar = document.getElementById('bigbar'); if (bigBar) bigBar.style.width = pct + '%';
+  const bigCount = document.getElementById('bigcount'); if (bigCount) bigCount.textContent = done + ' / ' + total + ' signed';
+  const sbTasks = document.getElementById('sidebarTasks'); if (sbTasks) sbTasks.textContent = done + '/' + total + ' checkpoints';
+}
+boxes.forEach(b => b.addEventListener('change', () => { saveChecklist(); paintChecklist(); }));
+
+/* ---------- Smart Quiz Engine (7 Questions Total) ---------- */
+let quizScores = {};
+const QUIZ_TOTAL = 7;
+
+function checkQuizDirect(name, resId, cardId) {
+  const card = document.getElementById(cardId);
+  const res = document.getElementById(resId);
+  const radios = card.querySelectorAll('input[name="' + name + '"]');
+  let selected = null;
+  radios.forEach(r => { if (r.checked) selected = r.value; r.disabled = true; });
+
+  const correct = card.querySelector('[data-correct]').dataset.correct;
+  card.querySelectorAll('.quiz-opt').forEach(opt => {
+    opt.classList.remove('selected-correct', 'selected-wrong');
+    const input = opt.querySelector('input');
+    if (input.value === correct) opt.classList.add('selected-correct');
+    else if (input.checked) opt.classList.add('selected-wrong');
+  });
+
+  const isRight = selected === correct;
+  quizScores[name] = isRight ? 1 : 0;
+
+  if (!selected) {
+    res.className = 'mt-3 result-msg bg-gray-50 text-gray-700 font-bold px-3 py-2 rounded border border-gray-200 text-sm';
+    res.textContent = 'Please select an answer first.';
+  } else if (isRight) {
+    res.className = 'mt-3 result-msg bg-green-50 text-green-800 font-bold px-3 py-2 rounded border border-green-200 text-sm';
+    res.textContent = '✓ Correct! You have understood this technical specification.';
+  } else {
+    res.className = 'mt-3 result-msg bg-red-50 text-red-800 font-bold px-3 py-2 rounded border border-red-200 text-sm';
+    res.textContent = '✗ Incorrect. Review the section instructions above and verify the exact parameters.';
+  }
+  res.classList.remove('hidden');
+  paintQuizEngine();
+}
+
+function paintQuizEngine() {
+  const right = Object.values(quizScores).filter(v => v === 1).length;
+  const pct = Math.round((right / QUIZ_TOTAL) * 100);
+  const qBar = document.getElementById('quizScoreBar'); if (qBar) qBar.style.width = pct + '%';
+  const qTxt = document.getElementById('quizScoreText'); if (qTxt) qTxt.textContent = pct + '%';
+  const pctBar = document.getElementById('pctbar'); if (pctBar) pctBar.style.width = pct + '%';
+  const pctTxt = document.getElementById('pct'); if (pctTxt) pctTxt.textContent = pct + '%';
+  const fScore = document.getElementById('finalScore'); if (fScore) fScore.textContent = right + ' / ' + QUIZ_TOTAL;
+}
+
+function resetAll() {
+  quizScores = {};
+  document.querySelectorAll('.quiz-card').forEach(card => {
+    const res = card.querySelector('.result-msg');
+    if (res) { res.classList.add('hidden'); res.textContent = ''; }
+    card.querySelectorAll('.quiz-opt').forEach(opt => {
+      opt.classList.remove('selected-correct', 'selected-wrong');
+      const input = opt.querySelector('input');
+      input.disabled = false; input.checked = false;
+    });
+  });
+  paintQuizEngine();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+paintChecklist();
+paintQuizEngine();
+</script>
+</body>
+</html>
